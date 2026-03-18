@@ -1,7 +1,12 @@
+import os
+import sys
+
+# Add project root to sys.path so we can import 'src' when running directly
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+
 from typing import List
 from langchain_core.documents import Document
 from src.ingest.vectorstore import VectorStoreManager
-
 class AdmissionRetriever:
     def __init__(self, k: int = 5):
         self.vector_manager = VectorStoreManager()
@@ -17,5 +22,6 @@ class AdmissionRetriever:
 if __name__ == "__main__":
     # Test retriever
     retriever = AdmissionRetriever()
-    # docs = retriever.get_relevant_documents("Ngành Trí tuệ nhân tạo là gì?")
-    # for d in docs: print(d.page_content[:100])
+    docs = retriever.get_relevant_documents("Tổ hợp xét tuyển ngành của Thiết kế Games là gì?")
+    for d in docs: 
+        print(d.metadata)

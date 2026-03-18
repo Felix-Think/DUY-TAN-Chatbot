@@ -1,5 +1,5 @@
 from typing import List
-from langchain_community.document_loaders import DirectoryLoader, UnstructuredMarkdownLoader
+from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_core.documents import Document
 from src.config.settings import settings
 
@@ -13,7 +13,8 @@ class MarkdownLoader:
         loader = DirectoryLoader(
             self.sources_path,
             glob="**/*.md",
-            loader_cls=UnstructuredMarkdownLoader,
+            loader_cls=TextLoader,
+            loader_kwargs={"encoding": "utf-8"},
             show_progress=True
         )
         docs = loader.load()
