@@ -1,193 +1,153 @@
 :root {
-  --primary-color: #b71c1c; /* Màu đỏ Duy Tân */
-  --secondary-color: #fce4ec;
-  --bg-color: #f0f2f5;
-  --text-main: #1c1e21;
-  --text-light: #65676b;
-  --bot-msg-bg: #f2f3f5;
-  --user-msg-bg: #b71c1c;
-  --user-msg-text: #ffffff;
+  --primary-color: #b71c1c; 
+  --bg-color: #f5f7f9;
+}
+
+/* Ép kiểu toàn bộ trang */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  overflow: hidden !important;
+  background-color: var(--bg-color) !important;
 }
 
 #root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--bg-color);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  width: 100vw !important;
 }
 
+/* Khung Chat Chính */
 .chat-container {
-  width: 100%;
-  max-width: 600px; /* Tăng độ rộng lên một chút cho dễ đọc */
-  height: 90vh;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-  border-radius: 12px;
-  overflow: hidden;
+  width: 95% !important;
+  max-width: 650px !important;
+  height: 85vh !important;
+  background: white !important;
+  display: flex !important;
+  flex-direction: column !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1) !important;
+  overflow: hidden !important;
+  border: 1px solid #e0e0e0 !important;
 }
 
 /* Header */
 .chat-header {
-  padding: 20px;
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  padding: 20px !important;
+  text-align: center !important;
 }
 
 .chat-header h1 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 600;
+  margin: 0 !important;
+  font-size: 1.3rem !important;
+  letter-spacing: 0.5px !important;
 }
 
-.header-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-
-.status {
-  margin: 0;
-  font-size: 0.8rem;
-  opacity: 0.9;
-}
-
-/* Chat Window */
+/* Cửa sổ tin nhắn */
 .chat-window {
-  flex: 1;
-  padding: 24px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background-color: #ffffff;
+  flex: 1 !important;
+  padding: 20px !important;
+  overflow-y: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+  background-color: #ffffff !important;
 }
 
 .message-row {
-  display: flex;
-  width: 100%;
+  display: flex !important;
+  width: 100% !important;
 }
 
-.message-row.bot {
-  justify-content: flex-start;
-}
-
-.message-row.user {
-  justify-content: flex-end;
-}
+.message-row.bot { justify-content: flex-start !important; }
+.message-row.user { justify-content: flex-end !important; }
 
 .message-bubble {
-  max-width: 85%;
-  padding: 12px 18px;
-  border-radius: 18px;
-  font-size: 1rem;
-  line-height: 1.6;
+  max-width: 80% !important;
+  padding: 12px 18px !important;
+  border-radius: 20px !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  font-family: inherit !important;
 }
 
 .bot .message-bubble {
-  background-color: var(--bot-msg-bg);
-  color: var(--text-main);
-  border-bottom-left-radius: 4px;
+  background-color: #f1f3f4 !important;
+  color: #202124 !important;
+  border-bottom-left-radius: 5px !important;
 }
 
 .user .message-bubble {
-  background-color: var(--user-msg-bg);
-  color: var(--user-msg-text);
-  border-bottom-right-radius: 4px;
-}
-
-/* Markdown styling - Giúp các list trông gọn hơn */
-.message-bubble p {
-  margin: 0 0 10px 0;
-}
-.message-bubble p:last-child {
-  margin-bottom: 0;
-}
-.message-bubble ul, .message-bubble ol {
-  margin: 10px 0;
-  padding-left: 20px;
-}
-.message-bubble li {
-  margin-bottom: 5px;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-bottom-right-radius: 5px !important;
 }
 
 /* Input Area */
 .input-area {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: white;
-  border-top: 1px solid #eee;
+  padding: 20px !important;
+  display: flex !important;
+  gap: 12px !important;
+  background: white !important;
+  border-top: 1px solid #eee !important;
 }
 
 .input-area input {
-  flex: 1;
-  padding: 14px 20px;
-  border: 1px solid #ddd;
-  background-color: #f8f9fa;
-  border-radius: 25px;
-  outline: none;
-  font-size: 1rem;
-  transition: border-color 0.2s;
+  flex: 1 !important;
+  padding: 14px 22px !important;
+  border: 2px solid #f0f0f0 !important;
+  background-color: #f9f9f9 !important;
+  border-radius: 30px !important;
+  outline: none !important;
+  font-size: 1rem !important;
 }
 
 .input-area input:focus {
-  border-color: var(--primary-color);
+  border-color: var(--primary-color) !important;
+  background-color: #fff !important;
 }
 
 .send-btn {
-  background-color: var(--primary-color);
-  border: none;
-  color: white;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.2s;
-}
-
-.send-btn:hover:not(:disabled) {
-  opacity: 0.9;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border: none !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .send-btn:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+  background-color: #ddd !important;
+  cursor: not-allowed !important;
 }
 
-.send-btn svg {
-  width: 20px;
-  height: 20px;
-}
-
-/* Loading dots */
+/* Loading Dots */
 .loading {
-  display: flex;
-  gap: 4px;
-  padding: 12px 16px;
-  background: var(--bot-msg-bg);
-  width: fit-content;
+  display: flex !important;
+  gap: 4px !important;
+  padding: 12px 16px !important;
+  background: #f1f3f4 !important;
+  border-radius: 20px !important;
+  width: fit-content !important;
 }
 
 .dot {
-  width: 6px;
-  height: 6px;
-  background: #90949c;
+  width: 7px;
+  height: 7px;
+  background: #70757a;
   border-radius: 50%;
   animation: wave 1.3s linear infinite;
 }
-
-.dot:nth-child(2) { animation-delay: -1.1s; }
-.dot:nth-child(3) { animation-delay: -0.9s; }
 
 @keyframes wave {
   0%, 60%, 100% { transform: translateY(0); }
