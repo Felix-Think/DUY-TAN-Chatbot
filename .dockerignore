@@ -1,0 +1,18 @@
+# Ignore local environment
+.venv/
+__pycache__/
+*.pyc
+.env
+.git/
+.gitignore
+
+# Ignore large data directories (they should be mounted via volumes)
+data/chromadb/
+data/sources/
+
+# Ignore frontend build artifacts if present
+frontend/dist/
+frontend/node_modules/
+
+# Ignore logs
+*.log

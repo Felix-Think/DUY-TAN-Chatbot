@@ -1,0 +1,48 @@
+services:
+  # Reverse Proxy: Quản lý Domain và SSL cho toàn hệ thống
+  proxy-manager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: duy-tan-proxy
+    restart: unless-stopped
+    ports:
+      - '80:80'   # HTTP Public
+      - '81:81'   # Dashboard quản lý (Cần bảo mật: http://localhost:81)
+      - '443:443' # HTTPS Public
+    volumes:
+      - ./data/proxy/data:/data
+      - ./data/proxy/letsencrypt:/etc/letsencrypt
+    networks:
+      - DuyTan
+
+  api:
+    build: .
+    container_name: duy-tan-api
+    restart: always
+    # Cổng 8000 bây giờ sẽ được Proxy quản lý, không cần public trực tiếp nữa (bảo mật hơn)
+    expose:
+      - "8000"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    networks:
+      - DuyTan
+
+  frontend:
+    build: 
+      context: ./frontend
+      # Truyền biến môi trường API URL vào quá trình build Vite
+      args:
+        - VITE_API_URL=${VITE_API_URL:-http://localhost:8000}
+    container_name: duy-tan-frontend
+    restart: always
+    expose:
+      - "80"
+    depends_on:
+      - api
+    networks:
+      - DuyTan
+
+networks:
+  DuyTan:
+    driver: bridge

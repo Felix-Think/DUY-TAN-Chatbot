@@ -23,14 +23,16 @@ function App() {
     setInput("");
     setIsLoading(true);
     const default_secret_key = "duytan-secret-2024"
+    // Lấy URL API từ biến môi trường, mặc định là localhost nếu không có
+    const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+    
     try {
       // 2. Gửi yêu cầu đến Backend Python (FastAPI)
-      // Địa chỉ: http://localhost:8000/api/v1/chat/ask
-      const response = await fetch("http://localhost:8000/api/v1/chat/ask", {
+      const response = await fetch(`${API_BASE_URL}/api/v1/chat/ask`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-API-KEY": default_secret_key // Key này phải khớp với cấu hình trong Backend
+          "X-API-KEY": default_secret_key
         },
         body: JSON.stringify({ query: currentInput })
       });

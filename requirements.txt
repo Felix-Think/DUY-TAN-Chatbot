@@ -1,0 +1,13 @@
+fastapi==0.115.0
+uvicorn==0.31.0
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+langchain==0.3.3
+langchain-openai==0.2.2
+langchain-community==0.3.2
+langchain-chroma==0.1.4
+chromadb==0.5.15
+pydantic[email]==2.9.2
+markdown==3.7
+numpy==2.1.2
+unstructured==0.15.13
