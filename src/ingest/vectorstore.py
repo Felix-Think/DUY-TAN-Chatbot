@@ -2,6 +2,9 @@ from typing import List
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
+from pathlib import Path
+import sys
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 from src.config.settings import settings
 
 class VectorStoreManager:
@@ -36,8 +39,34 @@ class VectorStoreManager:
         )
 
 if __name__ == "__main__":
-    # Test vector store logic with mock data
-    mock_chunks = [Document(page_content="Đây là ví dụ về dữ liệu tuyển sinh.", metadata={"source": "test.md"})]
+    from langchain_core.embeddings import FakeEmbeddings
+
+    print("Testing VectorStoreManager with FakeEmbeddings...")
+    
+    # 1. Initialize manager but replace real embeddings with fake ones
     manager = VectorStoreManager()
-    # manager.create_vector_store(mock_chunks) # Uncomment to run actual embedding
-    print("Vector Store Manager initialized.")
+    manager.embeddings = FakeEmbeddings(size=1536) # Same dimension as text-embedding-3-small
+    manager.persist_directory = "./chroma_db_mock" # Use a separate test DB
+    
+    # 2. Create mock data
+    mock_chunks = [
+        Document(page_content="Đây là ví dụ về dữ liệu tuyển sinh.", metadata={"source": "test.md"}),
+        Document(page_content="Ngành Công nghệ Phần mềm học lập trình.", metadata={"source": "test.md"})
+    ]
+    
+    # 3. Test creation
+    print("\n--- Testing create_vector_store ---")
+    vector_db = manager.create_vector_store(mock_chunks)
+    
+    # 4. Test retrieval
+    print("\n--- Testing get_vector_store ---")
+    retrieved_db = manager.get_vector_store()
+    
+    # 5. Test a quick search
+    results = retrieved_db.similarity_search("AI", k=1)
+    print("\n--- Search Results ---")
+    for res in results:
+        print(f"Content: {res.page_content}")
+        print(f"Metadata: {res.metadata}")
+        
+    print("\nVectorStore mock test completed successfully!")

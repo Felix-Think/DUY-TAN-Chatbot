@@ -14,7 +14,7 @@ def main():
         return
 
     # 2. Chunk Documents
-    chunker = DocumentChunker(chunk_size=1000, chunk_overlap=100)
+    chunker = DocumentChunker()
     chunks = chunker.split(documents)
     
     # 3. Create Vector Store

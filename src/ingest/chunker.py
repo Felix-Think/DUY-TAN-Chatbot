@@ -1,57 +1,68 @@
 from typing import List
-from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
+import tiktoken
+from langchain_text_splitters import MarkdownHeaderTextSplitter
 from langchain_core.documents import Document
+from langchain_community.document_loaders import TextLoader
+
 
 class DocumentChunker:
-    def __init__(self, chunk_size: int = 1000, chunk_overlap: int = 100):
-        # 1. Define headers to split on
+    def __init__(self):
+        # Split only on ### headers
         self.headers_to_split_on = [
-            ("#", "Header 1"),
-            ("##", "Header 2"),
-            ("###", "Header 3"),
+            ("#", "Nganh"),
+            ("##", "ChuyenNganh"),
+            ("###", "HangMuc"),
         ]
-        
-        # 2. Markdown Header Splitter
+
         self.markdown_splitter = MarkdownHeaderTextSplitter(
-            headers_to_split_on=self.headers_to_split_on
-        )
-        
-        # 3. Secondary splitter for large sections
-        self.text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap,
-            separators=["\n\n", "\n", " ", ""]
+            headers_to_split_on=self.headers_to_split_on,
+            strip_headers=True
         )
 
     def split(self, documents: List[Document]) -> List[Document]:
-        """Splits documents using Markdown headers and recursive splitting."""
+        """Splits documents by ### Markdown headers only (no recursive splitting)."""
         all_chunks = []
-        
+
         for doc in documents:
-            # First split by markdown headers
             header_chunks = self.markdown_splitter.split_text(doc.page_content)
-            
-            # Further split each header chunk into smaller pieces if needed
-            chunks = self.text_splitter.split_documents(header_chunks)
-            
-            # Carry over original metadata if any (like source filename)
-            for chunk in chunks:
+
+            # Carry over original metadata (e.g. source filename)
+            for chunk in header_chunks:
                 chunk.metadata.update(doc.metadata)
-            
-            all_chunks.extend(chunks)
-        
+
+                # Include headers in the content so the LLM knows the section context
+                headers_text = ", ".join(f"{v}" for k, v in chunk.metadata.items() if k != "source")
+                if headers_text:
+                    chunk.page_content = f"[{headers_text}]\n{chunk.page_content}"
+
+            all_chunks.extend(header_chunks)
+
         print(f"Created {len(all_chunks)} chunks from {len(documents)} document(s).")
         return all_chunks
 
+
+def count_tokens(text: str, model: str = "gpt-4o") -> int:
+    enc = tiktoken.encoding_for_model(model)
+    return len(enc.encode(text))
+
+
 if __name__ == "__main__":
-    # Mock test
-    mock_doc = Document(
-        page_content="# Trường KHMT\n## Ngành TTNT\nMô tả chi tiết ngành TTNT...",
-        metadata={"source": "test.md"}
-    )
+    loader = TextLoader("Documents/SCA_Major.md", encoding="utf-8")
+    data = loader.load()
+
     chunker = DocumentChunker()
-    test_chunks = chunker.split([mock_doc])
-    for i, c in enumerate(test_chunks):
-        print(f"Chunk {i} Metadata: {c.metadata}")
-        print(f"Chunk {i} Content: {c.page_content[:100]}\n")
-        
+    chunks = chunker.split(data)
+
+    print("\n=== Token count per chunk ===")
+    token_counts = []
+    for i, chunk in enumerate(chunks):
+        n_tokens = count_tokens(chunk.page_content)
+        token_counts.append(n_tokens)
+        header = chunk.metadata.get("HangMuc", "(no header)")
+        print(f"Chunk {i+1:>3} | {n_tokens:>5} tokens | ### {header}")
+        print(f"         metadata: {chunk.metadata}")
+
+    print(f"\nMin : {min(token_counts)}")
+    print(f"Max : {max(token_counts)}")
+    print(f"Avg : {sum(token_counts) / len(token_counts):.1f}")
+    print(f"Total: {sum(token_counts)}")
