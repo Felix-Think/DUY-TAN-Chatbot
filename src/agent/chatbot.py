@@ -44,13 +44,21 @@ class AdmissionChatbot:
             
             # 1. Capture Context (from Retriever)
             if event_type == "on_retriever_end":
-                yield {"context": event["data"]["output"]["documents"]}
+                # In langchain_classic, output IS the list of documents
+                documents = event["data"].get("output")
+                if documents:
+                    yield {"context": documents}
                 
-            # 2. Capture Answer Tokens (from Chat Model)
-            elif event_type == "on_chat_model_stream":
-                content = event["data"]["chunk"].content
-                if content:
-                    yield {"token": content}
+            # 2. Capture Answer Tokens (from Chain Stream)
+            elif event_type == "on_chain_stream":
+                chunk = event["data"].get("chunk")
+                # In langchain_classic, the answer tokens often come as raw strings 
+                # or in a dict with 'answer' key depending on the chain depth
+                if isinstance(chunk, str):
+                    yield {"token": chunk}
+                elif isinstance(chunk, dict) and "answer" in chunk:
+                    if chunk["answer"]: # Avoid empty strings
+                        yield {"token": chunk["answer"]}
 
 if __name__ == "__main__":
     # Simple CLI Test

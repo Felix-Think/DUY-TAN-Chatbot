@@ -52,43 +52,47 @@ function App() {
       const decoder = new TextDecoder();
       let fullAnswer = "";
       let hasAddedBotMessage = false;
+      let buffer = ""; // Buffer để lưu dữ liệu chưa hoàn chỉnh
 
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
 
-        const chunk = decoder.decode(value);
-        const lines = chunk.split("\n");
+        buffer += decoder.decode(value, { stream: true });
+        
+        // Chia buffer thành các dòng
+        let lines = buffer.split("\n");
+        // Giữ lại dòng cuối cùng (có thể chưa hoàn chỉnh) vào buffer
+        buffer = lines.pop();
 
         for (const line of lines) {
-          if (line.startsWith("data: ")) {
-            const dataStr = line.slice(6);
-            if (dataStr === "[DONE]") break;
+          const trimmedLine = line.trim();
+          if (!trimmedLine || !trimmedLine.startsWith("data: ")) continue;
 
-            try {
-              const data = JSON.parse(dataStr);
-              if (data.token) {
-                fullAnswer += data.token;
-                
-                if (!hasAddedBotMessage) {
-                  // Thêm tin nhắn bot lần đầu tiên khi có token
-                  setMessages(prev => [...prev, { role: "bot", text: fullAnswer }]);
-                  hasAddedBotMessage = true;
-                } else {
-                  // Cập nhật tin nhắn bot đã tồn tại
-                  setMessages(prev => {
-                    const newMessages = [...prev];
-                    newMessages[newMessages.length - 1] = { 
-                      role: "bot", 
-                      text: fullAnswer 
-                    };
-                    return newMessages;
-                  });
-                }
+          const dataStr = trimmedLine.slice(6);
+          if (dataStr === "[DONE]") break;
+
+          try {
+            const data = JSON.parse(dataStr);
+            if (data.token) {
+              fullAnswer += data.token;
+              
+              if (!hasAddedBotMessage) {
+                setMessages(prev => [...prev, { role: "bot", text: fullAnswer }]);
+                hasAddedBotMessage = true;
+              } else {
+                setMessages(prev => {
+                  const newMessages = [...prev];
+                  newMessages[newMessages.length - 1] = { 
+                    role: "bot", 
+                    text: fullAnswer 
+                  };
+                  return newMessages;
+                });
               }
-            } catch (e) {
-              console.error("Error parsing JSON chunk", e);
             }
+          } catch (e) {
+            console.error("Error parsing JSON chunk:", dataStr, e);
           }
         }
       }
