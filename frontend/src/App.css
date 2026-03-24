@@ -5,145 +5,269 @@
 
 /* Ép kiểu toàn bộ trang */
 html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 100vh !important;
-  width: 100vw !important;
-  overflow: hidden !important;
-  background-color: var(--bg-color) !important;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent; /* Cho phép nhìn thấy trang web phía dưới nếu nhúng */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 #root {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  height: 100vh !important;
-  width: 100vw !important;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none; /* Để không chặn click vào trang web phía dưới khi không mở chat */
 }
 
-/* Khung Chat Chính */
+#root * {
+  pointer-events: auto; /* Bật lại click cho các phần tử con */
+}
+
+.app-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+/* Bong bóng chat khi đóng */
+.chat-bubble-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.chat-bubble-container:hover {
+  transform: scale(1.05);
+}
+
+.chat-bubble-label {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+/* Tam giác nhỏ trỏ vào icon */
+.chat-bubble-label::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 0 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+}
+
+.chat-bubble-icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 2px solid var(--primary-color);
+}
+
+.bot-avatar-large {
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Khung Chat Chính (Dạng Widget) */
 .chat-container {
-  width: 95% !important;
-  max-width: 650px !important;
-  height: 85vh !important;
-  background: white !important;
-  display: flex !important;
-  flex-direction: column !important;
-  border-radius: 16px !important;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1) !important;
-  overflow: hidden !important;
-  border: 1px solid #e0e0e0 !important;
+  width: 400px;
+  height: 600px;
+  max-height: 80vh;
+  max-width: 90vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
 }
 
 /* Header */
 .chat-header {
-  background-color: var(--primary-color) !important;
-  color: white !important;
-  padding: 20px !important;
-  text-align: center !important;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.bot-avatar {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .chat-header h1 {
-  margin: 0 !important;
-  font-size: 1.3rem !important;
-  letter-spacing: 0.5px !important;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.status {
+  margin: 0;
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn svg {
+  width: 24px;
+  height: 24px;
 }
 
 /* Cửa sổ tin nhắn */
 .chat-window {
-  flex: 1 !important;
-  padding: 20px !important;
-  overflow-y: auto !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 15px !important;
-  background-color: #ffffff !important;
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #ffffff;
 }
 
 .message-row {
-  display: flex !important;
-  width: 100% !important;
+  display: flex;
+  width: 100%;
 }
 
-.message-row.bot { justify-content: flex-start !important; }
-.message-row.user { justify-content: flex-end !important; }
+.message-row.bot { justify-content: flex-start; }
+.message-row.user { justify-content: flex-end; }
 
 .message-bubble {
-  max-width: 80% !important;
-  padding: 12px 18px !important;
-  border-radius: 20px !important;
-  font-size: 1rem !important;
-  line-height: 1.5 !important;
-  font-family: inherit !important;
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 .bot .message-bubble {
-  background-color: #f1f3f4 !important;
-  color: #202124 !important;
-  border-bottom-left-radius: 5px !important;
+  background-color: #f1f3f4;
+  color: #202124;
+  border-bottom-left-radius: 2px;
 }
 
 .user .message-bubble {
-  background-color: var(--primary-color) !important;
-  color: white !important;
-  border-bottom-right-radius: 5px !important;
+  background-color: var(--primary-color);
+  color: white;
+  border-bottom-right-radius: 2px;
 }
 
 /* Input Area */
 .input-area {
-  padding: 20px !important;
-  display: flex !important;
-  gap: 12px !important;
-  background: white !important;
-  border-top: 1px solid #eee !important;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  background: white;
+  border-top: 1px solid #eee;
 }
 
 .input-area input {
-  flex: 1 !important;
-  padding: 14px 22px !important;
-  border: 2px solid #f0f0f0 !important;
-  background-color: #f9f9f9 !important;
-  border-radius: 30px !important;
-  outline: none !important;
-  font-size: 1rem !important;
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  outline: none;
+  font-size: 0.95rem;
 }
 
 .input-area input:focus {
-  border-color: var(--primary-color) !important;
-  background-color: #fff !important;
+  border-color: var(--primary-color);
+  background-color: #fff;
 }
 
 .send-btn {
-  background-color: var(--primary-color) !important;
-  color: white !important;
-  border: none !important;
-  width: 50px !important;
-  height: 50px !important;
-  border-radius: 50% !important;
-  cursor: pointer !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 .send-btn:disabled {
-  background-color: #ddd !important;
-  cursor: not-allowed !important;
+  background-color: #ddd;
+  cursor: not-allowed;
 }
 
 /* Loading Dots */
 .loading {
-  display: flex !important;
-  gap: 4px !important;
-  padding: 12px 16px !important;
-  background: #f1f3f4 !important;
-  border-radius: 20px !important;
-  width: fit-content !important;
+  display: flex;
+  gap: 3px;
+  padding: 8px 12px;
+  background: #f1f3f4;
+  border-radius: 15px;
+  width: fit-content;
 }
 
 .dot {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   background: #70757a;
   border-radius: 50%;
   animation: wave 1.3s linear infinite;
@@ -151,5 +275,5 @@ html, body {
 
 @keyframes wave {
   0%, 60%, 100% { transform: translateY(0); }
-  30% { transform: translateY(-4px); }
+  30% { transform: translateY(-3px); }
 }
