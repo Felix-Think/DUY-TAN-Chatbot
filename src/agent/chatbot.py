@@ -34,6 +34,24 @@ class AdmissionChatbot:
             "context": response["context"]
         }
 
+    async def astream(self, query: str):
+        """Streams a query and yields answer tokens and context."""
+        async for event in self.rag_chain.astream_events(
+            {"input": query}, 
+            version="v2"
+        ):
+            event_type = event["event"]
+            
+            # 1. Capture Context (from Retriever)
+            if event_type == "on_retriever_end":
+                yield {"context": event["data"]["output"]["documents"]}
+                
+            # 2. Capture Answer Tokens (from Chat Model)
+            elif event_type == "on_chat_model_stream":
+                content = event["data"]["chunk"].content
+                if content:
+                    yield {"token": content}
+
 if __name__ == "__main__":
     # Simple CLI Test
     bot = AdmissionChatbot()

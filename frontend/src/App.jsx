@@ -30,6 +30,7 @@ function App() {
     const currentInput = input;
     setInput("");
     setIsLoading(true);
+    
     const default_secret_key = "duytan-secret-2024"
     const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
     
@@ -47,8 +48,50 @@ function App() {
         throw new Error("Lỗi từ server");
       }
 
-      const data = await response.json();
-      setMessages(prev => [...prev, { role: "bot", text: data.answer }]);
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let fullAnswer = "";
+      let hasAddedBotMessage = false;
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value);
+        const lines = chunk.split("\n");
+
+        for (const line of lines) {
+          if (line.startsWith("data: ")) {
+            const dataStr = line.slice(6);
+            if (dataStr === "[DONE]") break;
+
+            try {
+              const data = JSON.parse(dataStr);
+              if (data.token) {
+                fullAnswer += data.token;
+                
+                if (!hasAddedBotMessage) {
+                  // Thêm tin nhắn bot lần đầu tiên khi có token
+                  setMessages(prev => [...prev, { role: "bot", text: fullAnswer }]);
+                  hasAddedBotMessage = true;
+                } else {
+                  // Cập nhật tin nhắn bot đã tồn tại
+                  setMessages(prev => {
+                    const newMessages = [...prev];
+                    newMessages[newMessages.length - 1] = { 
+                      role: "bot", 
+                      text: fullAnswer 
+                    };
+                    return newMessages;
+                  });
+                }
+              }
+            } catch (e) {
+              console.error("Error parsing JSON chunk", e);
+            }
+          }
+        }
+      }
 
     } catch (error) {
       console.error("Lỗi kết nối:", error);

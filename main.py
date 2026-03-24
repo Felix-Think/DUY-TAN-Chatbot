@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends
+from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from src.schemas.chat import ChatRequest, ChatResponse
 from src.api.dependencies import get_chatbot_service, verify_token
@@ -29,20 +30,22 @@ def read_root():
     return {"message": "Welcome to Duy Tan University Admission Chatbot API!"}
 
 # Single Chat Endpoint with Dependencies: Cache Instance & Auth Check
-@app.post("/api/v1/chat/ask", response_model=ChatResponse)
+@app.post("/api/v1/chat/ask")
 async def ask_chatbot(
     request: ChatRequest,
     agent: AdmissionChatbot = Depends(get_chatbot_service),
     auth: dict = Depends(verify_token)
 ):
     """
-    Asks the admission bot a question.
+    Asks the admission bot a question with a streaming response.
     - Requires 'X-API-KEY' header for mock authentication.
     - Uses a singleton chatbot instance for performance.
     """
     service = ChatService(agent)
-    response = await service.get_response(request)
-    return response
+    return StreamingResponse(
+        service.get_streaming_response(request),
+        media_type="text/event-stream"
+    )
 
 if __name__ == "__main__":
     import uvicorn
