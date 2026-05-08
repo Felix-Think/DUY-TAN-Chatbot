@@ -1,4 +1,16 @@
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+
+CONTEXTUALIZE_SYSTEM_PROMPT = """
+Dựa vào lịch sử hội thoại và câu hỏi mới nhất, hãy viết lại câu hỏi mới thành
+một câu hỏi độc lập, rõ nghĩa để dùng cho bước tìm kiếm tài liệu tuyển sinh.
+
+Yêu cầu:
+- Không trả lời câu hỏi.
+- Chỉ viết lại câu hỏi.
+- Nếu câu hỏi mới đã rõ nghĩa, giữ nguyên nội dung chính.
+- Nếu có đại từ như "nó", "ngành đó", "cái này", hãy thay bằng chủ thể cụ thể
+  đã được nhắc gần nhất trong lịch sử hội thoại.
+"""
 
 ADMISSION_SYSTEM_PROMPT = """
 Bạn là một chuyên gia tư vấn tuyển sinh giàu kinh nghiệm tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân. 
@@ -26,5 +38,13 @@ Hãy trả lời câu hỏi của người dùng một cách chi tiết nhất c
 def get_admission_prompt():
     return ChatPromptTemplate.from_messages([
         ("system", ADMISSION_SYSTEM_PROMPT),
+        MessagesPlaceholder("chat_history"),
+        ("human", "{input}"),
+    ])
+
+def get_contextualize_prompt():
+    return ChatPromptTemplate.from_messages([
+        ("system", CONTEXTUALIZE_SYSTEM_PROMPT),
+        MessagesPlaceholder("chat_history"),
         ("human", "{input}"),
     ])

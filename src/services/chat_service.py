@@ -8,7 +8,7 @@ class ChatService:
 
     async def get_response(self, request: ChatRequest) -> ChatResponse:
         """Processes a chat request using the agent."""
-        result = self.agent.ask(request.query)
+        result = self.agent.ask(request.query, session_id=request.session_id)
         
         # Transform context if present
         context = []
@@ -25,7 +25,7 @@ class ChatService:
 
     async def get_streaming_response(self, request: ChatRequest):
         """Processes a chat request and yields SSE data chunks."""
-        async for chunk in self.agent.astream(request.query):
+        async for chunk in self.agent.astream(request.query, session_id=request.session_id):
             data = {}
             
             # 1. Handle Context (only sent once at the beginning)

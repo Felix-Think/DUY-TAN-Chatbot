@@ -13,6 +13,17 @@ function App() {
   ]);
   const [isLoading, setIsLoading] = useState(false);
   const chatWindowRef = useRef(null);
+  const [sessionId] = useState(() => {
+    const storageKey = "dtu-admission-chat-session-id";
+    const existingSessionId = localStorage.getItem(storageKey);
+    const newSessionId = crypto.randomUUID
+      ? crypto.randomUUID()
+      : `web-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    const nextSessionId = existingSessionId || newSessionId;
+
+    localStorage.setItem(storageKey, nextSessionId);
+    return nextSessionId;
+  });
 
   // Tự động cuộn xuống khi có tin nhắn mới
   useEffect(() => {
@@ -41,7 +52,10 @@ function App() {
           "Content-Type": "application/json",
           "X-API-KEY": default_secret_key
         },
-        body: JSON.stringify({ query: currentInput })
+        body: JSON.stringify({
+          query: currentInput,
+          session_id: sessionId
+        })
       });
 
       if (!response.ok) {

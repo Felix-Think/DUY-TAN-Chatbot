@@ -1,0 +1,13 @@
+id,test_category,input,expected_source,expected_keywords,priority,notes
+1,admission,Trường SCA có bao nhiêu ngành tuyển sinh?,GeneralMajorMap.md,Kỹ thuật phần mềm (Đạt kiểm định ABET)|An toàn Thông tin (Cybersecurity)|Khoa học Máy tính|Trí tuệ Nhân tạo (AI)|Khoa học Dữ liệu|Mạng Máy tính & Truyền thông Dữ liệu,High,Danh mục ngành và chuyên ngành trong DB
+2,admission,SCA tuyển sinh theo những phương thức nào?,Application.md,Xét tuyển thẳng|Xét kết quả thi tốt nghiệp THPT 2026|Xét kết quả học tập THPT (Học bạ)|Đánh giá năng lực và V-SAT,High,Phương thức tuyển sinh 2026
+3,scholarship,Học bổng tuyển sinh 2026 của SCA như thế nào?,Scholarship.md,https://duytan.edu.vn/tuyen-sinh/Page/Scholarship.aspx|0985.001.291|0972.111.177|0905.885.285|0913.499.984,High,Thông tin học bổng và hotline
+4,admission,Bạn có thể tư vấn cho tôi về ngành Trí tuệ Nhân tạo (AI) được không?,SCA_Major.md,Trí tuệ Nhân tạo|Machine Learning|Deep Learning|Computer Vision|NLP|MLOps|VinAI|15-20 triệu,High,Tổng quan ngành AI
+5,admission,Ngành Công nghệ Phần mềm học những môn gì?,SCA_Major.md,Lập trình hướng đối tượng|Cấu trúc dữ liệu & giải thuật|Thiết kế phần mềm|Thiết kế Web|Kiểm thử và đảm bảo chất lượng phần mềm,High,Chương trình Công nghệ Phần mềm
+6,admission,Cơ hội việc làm của ngành Khoa học Máy tính là gì?,SCA_Major.md,Software Engineer|AI/ML Engineer|Data Scientist|R&D Engineer|FPT Software|VNG|Viettel,High,Cơ hội nghề nghiệp Khoa học Máy tính
+7,admission,Chuyên ngành An toàn Thông tin học gì?,SCA_Major.md,Mật mã học ứng dụng|Ethical Hacking|Penetration Testing|Digital Forensics|Kali Linux|Metasploit|Wireshark,High,Chương trình An toàn Thông tin
+8,admission,Tổ hợp xét tuyển ngành Trí tuệ Nhân tạo là gì?,SCA_Major.md,Trí tuệ Nhân tạo|A00|A01|D01|C01|C02|X26,High,Tổ hợp xét tuyển ngành AI
+9,admission,Mức lương ngành Trí tuệ Nhân tạo sau khi ra trường?,SCA_Major.md,15-20 triệu|50-100 triệu|Deep Learning|LLM Engineering|AI Research,Medium,Mức lương ngành AI
+10,admission,Sinh viên ngành Thiết kế Games và Multimedia thực hành ở đâu?,SCA_Major.md,Unity|Unreal Engine|Blender|Autodesk Maya|game & studio|hackathon,Medium,Thực hành ngành Games và Multimedia
+11,admission,Công nghệ Phần mềm Ô tô thông minh học nội dung gì?,SCA_Major.md,AUTOSAR|ISO 26262|Mạng CAN|ROS|NVIDIA Drive|ADAS,Medium,Nội dung ngành phần mềm ô tô
+12,admission,Các chuyên ngành sau đại học của SCA gồm những ngành nào?,GeneralMajorMap.md,Bậc: Sau Đại học (Thạc sĩ)|Khoa học Máy tính|Kỹ thuật Phần mềm|An toàn Thông tin|Hệ thống Thông tin Quản lý|Bậc: Sau Đại học (Tiến sĩ),High,Danh mục sau đại học

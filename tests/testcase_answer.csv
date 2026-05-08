@@ -1,0 +1,781 @@
+ID,Test_Category,Input,Target,Output,Score
+1,admission,Trường SCA có bao nhiêu ngành tuyển sinh?,"### Bậc Cử nhân (Đại học)
+1. **Kỹ thuật phần mềm (Đạt kiểm định ABET)**
+   - Chuyên ngành: Công nghệ Phần mềm
+   - Chuyên ngành: Công nghệ Phần mềm Ô tô thông minh
+   - Chuyên ngành: Thiết kế Games và Multimedia
+2. **An toàn Thông tin (Cybersecurity)**
+   - Chuyên ngành: An toàn Thông tin
+3. **Khoa học Máy tính**
+   - Chuyên ngành: Khoa học Máy tính
+   - Chuyên ngành: Kỹ thuật Máy tính
+4. **Trí tuệ Nhân tạo (AI)**
+   - Chuyên ngành: Trí tuệ Nhân tạo
+5. **Khoa học Dữ liệu**
+   - Chuyên ngành: Big Data and Machine Learning
+6. **Mạng Máy tính & Truyền thông Dữ liệu (Đạt kiểm định ABET)**
+   - Chuyên ngành: Kỹ thuật Mạng
+   - Chuyên ngành: Mạng máy tính và Truyền thông Dữ liệu
+
+### Bậc Sau Đại học
+- **Thạc sĩ**
+  - Ngành: Khoa học Máy tính
+  - Ngành: Kỹ thuật Phần mềm
+  - Ngành: An toàn Thông tin
+  - Ngành: Hệ thống Thông tin Quản lý
+- **Tiến sĩ**
+  - Ngành: Khoa học Máy tính","Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân hiện có các ngành tuyển sinh như sau:
+
+### Bậc Cử nhân (Đại học)
+1. **Kỹ thuật phần mềm (Đạt kiểm định ABET)**
+   - Chuyên ngành: Công nghệ Phần mềm
+   - Chuyên ngành: Công nghệ Phần mềm Ô tô thông minh
+   - Chuyên ngành: Thiết kế Games và Multimedia
+2. **An toàn Thông tin (Cybersecurity)**
+   - Chuyên ngành: An toàn Thông tin
+3. **Khoa học Máy tính**
+   - Chuyên ngành: Khoa học Máy tính
+   - Chuyên ngành: Kỹ thuật Máy tính
+4. **Trí tuệ Nhân tạo (AI)**
+   - Chuyên ngành: Trí tuệ Nhân tạo
+5. **Khoa học Dữ liệu**
+   - Chuyên ngành: Big Data and Machine Learning
+6. **Mạng Máy tính & Truyền thông Dữ liệu (Đạt kiểm định ABET)**
+   - Chuyên ngành: Kỹ thuật Mạng
+   - Chuyên ngành: Mạng máy tính và Truyền thông Dữ liệu
+
+### Bậc Sau Đại học
+- **Thạc sĩ**
+  - Ngành: Khoa học Máy tính
+  - Ngành: Kỹ thuật Phần mềm
+  - Ngành: An toàn Thông tin
+  - Ngành: Hệ thống Thông tin Quản lý
+- **Tiến sĩ**
+  - Ngành: Khoa học Máy tính
+
+Tổng cộng, SCA có 6 ngành ở bậc cử nhân và 4 ngành ở bậc sau đại học. Nếu bạn cần thêm thông tin chi tiết về từng ngành, hãy cho tôi biết!",0.8081
+2,admission,SCA tuyển sinh theo những phương thức nào?,"1. **Xét tuyển thẳng**
+   - Chi tiết: Xét tuyển theo quy chế của Bộ Giáo dục và Đào tạo (Bộ GDĐT).
+
+2. **Xét kết quả thi tốt nghiệp THPT 2026**
+   - Chi tiết: Dựa trên điểm thi tốt nghiệp Trung học Phổ thông năm 2026.
+
+3. **Xét kết quả học tập THPT (Học bạ)**
+   - Chi tiết: Xét kết quả học tập năm lớp 10, lớp 11 và lớp 12.
+
+4. **Xét kết quả kỳ thi Đánh giá năng lực và V-SAT**
+   - Chi tiết: Dựa trên kết quả kỳ thi Đánh giá năng lực do Đại học Quốc gia TPHCM và kỳ thi V-SAT tổ chức năm 2026.","Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân tuyển sinh năm 2026 theo các phương thức sau:
+
+1. **Xét tuyển thẳng**
+   - Chi tiết: Xét tuyển theo quy chế của Bộ Giáo dục và Đào tạo (Bộ GDĐT).
+
+2. **Xét kết quả thi tốt nghiệp THPT 2026**
+   - Chi tiết: Dựa trên điểm thi tốt nghiệp Trung học Phổ thông năm 2026.
+
+3. **Xét kết quả học tập THPT (Học bạ)**
+   - Chi tiết: Xét kết quả học tập năm lớp 10, lớp 11 và lớp 12.
+
+4. **Xét kết quả kỳ thi Đánh giá năng lực và V-SAT**
+   - Chi tiết: Dựa trên kết quả kỳ thi Đánh giá năng lực do Đại học Quốc gia TPHCM và kỳ thi V-SAT tổ chức năm 2026.
+
+Nếu bạn cần thêm thông tin chi tiết về từng phương thức tuyển sinh, hãy cho tôi biết!",0.7813
+3,scholarship,Học bổng tuyển sinh 2026 của SCA như thế nào?,"### Cách tra cứu thông tin học bổng:
+- **Website:** [Học bổng Tuyển sinh SCA](https://duytan.edu.vn/tuyen-sinh/Page/Scholarship.aspx)
+
+### Hỗ trợ thêm:
+hãy liên hệ với Văn phòng Tuyển sinh qua các kênh sau:
+- **Hotline tư vấn:** 0985.001.291 - 0972.111.177 - 0905.885.285 - 0913.499.984","Thông tin về học bổng tuyển sinh năm 2026 của Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) hiện chưa được cung cấp chi tiết trong tài liệu. Tuy nhiên, bạn có thể tra cứu thông tin chi tiết về các học bổng tại trang web chính thức của trường.
+
+### Cách tra cứu thông tin học bổng:
+- **Website:** [Học bổng Tuyển sinh SCA](https://duytan.edu.vn/tuyen-sinh/Page/Scholarship.aspx)
+
+### Hỗ trợ thêm:
+Nếu bạn cần thêm thông tin hoặc có câu hỏi cụ thể, hãy liên hệ với Văn phòng Tuyển sinh qua các kênh sau:
+- **Hotline tư vấn:** 0985.001.291 - 0972.111.177 - 0905.885.285 - 0913.499.984
+
+Chúng tôi rất mong được hỗ trợ bạn!",0.7319
+4,admission,Bạn có thể tư vấn cho tôi về ngành Trí tuệ Nhân tạo (AI) được không?,"### 1. **Giới thiệu về Ngành Trí tuệ Nhân tạo**
+- Ngành Trí tuệ Nhân tạo nghiên cứu và phát triển các hệ thống máy tính có khả năng học hỏi, suy luận, nhận thức và hành động thông minh.
+- AI đang trải qua giai đoạn bùng nổ với nhiều ứng dụng thực tiễn, từ mô hình ngôn ngữ lớn đến xe tự lái, và có tiềm năng đóng góp lớn cho kinh tế toàn cầu.
+
+### 2. **Mục tiêu đào tạo**
+- Đào tạo kỹ sư và nhà nghiên cứu AI có nền tảng lý thuyết vững chắc và kỹ năng triển khai hệ thống thông minh.
+- Sinh viên sẽ được trang bị kiến thức về toán học, machine learning, xử lý ngôn ngữ tự nhiên, thị giác máy tính, và kỹ thuật dữ liệu.
+
+### 3. **Chương trình đào tạo**
+- **Các môn tiêu biểu:**
+  - Nền tảng AI & Toán học
+  - Học sâu & Thị giác máy tính
+  - Ngôn ngữ tự nhiên & AI tạo sinh
+  - Hệ thống AI & Triển khai
+- **Thực hành:**
+  - Phòng thực hành AI chuyên biệt với cụm GPU hiệu năng cao.
+  - Thực tập tại các công ty và tập đoàn lớn như VinAI, FPT AI, Viettel AI, và nhiều doanh nghiệp khác.
+
+### 4. **Cơ hội nghề nghiệp**
+- Sau khi tốt nghiệp, sinh viên có thể làm việc ở các vị trí như:
+  - Kỹ sư AI / Machine Learning
+  - Kỹ sư Computer Vision / NLP
+  - Nhà khoa học dữ liệu / Nghiên cứu AI
+  - Kỹ sư MLOps
+- **Lĩnh vực tuyển dụng:** Công nghệ AI, y tế, tài chính, nghiên cứu và giảng dạy.
+
+### 5. **Mức lương và cơ hội thăng tiến**
+- Mức lương khởi điểm cho sinh viên mới ra trường từ 15-20 triệu VNĐ/tháng.
+- Với 3-5 năm kinh nghiệm, mức lương có thể đạt 50-100 triệu VNĐ/tháng, đặc biệt cho các chuyên gia trong lĩnh vực AI.
+
+### 6. **Tổ hợp môn xét tuyển**
+- A00 (Toán, Lý, Hóa)
+- A01 (Toán, Lý, Anh)
+- D01 (Toán, Văn, Anh)
+- C01 (Văn, Toán, Lý)
+- C02 (Văn, Toán, Hóa)","Chắc chắn rồi! Dưới đây là thông tin chi tiết về ngành Trí tuệ Nhân tạo (AI) tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân:
+
+### 1. **Giới thiệu về Ngành Trí tuệ Nhân tạo**
+- Ngành Trí tuệ Nhân tạo nghiên cứu và phát triển các hệ thống máy tính có khả năng học hỏi, suy luận, nhận thức và hành động thông minh.
+- AI đang trải qua giai đoạn bùng nổ với nhiều ứng dụng thực tiễn như xe tự lái, chẩn đoán y tế, và tối ưu hóa chuỗi cung ứng.
+
+### 2. **Mục tiêu đào tạo**
+- Đào tạo kỹ sư và nhà nghiên cứu AI có nền tảng lý thuyết vững chắc và kỹ năng triển khai hệ thống thông minh.
+- Sinh viên sẽ được trang bị kiến thức về toán học, machine learning, xử lý ngôn ngữ tự nhiên, và kỹ thuật dữ liệu.
+
+### 3. **Chương trình đào tạo**
+- **Các môn tiêu biểu:**
+  - Nền tảng AI & Toán học: Toán cho Trí tuệ Nhân tạo, Machine Learning cơ bản và nâng cao.
+  - Học sâu & Thị giác máy tính: Deep Learning, Mạng nơ-ron tích chập (CNN).
+  - Ngôn ngữ tự nhiên & AI tạo sinh: Xử lý ngôn ngữ tự nhiên (NLP), Mô hình ngôn ngữ lớn (LLM).
+  - Hệ thống AI & Triển khai: Kỹ thuật dữ liệu, MLOps, Đạo đức trong Trí tuệ Nhân tạo.
+
+- **Thực hành:**
+  - Phòng thực hành AI chuyên biệt với cụm GPU hiệu năng cao.
+  - Thực tập tại các công ty và tập đoàn như VinAI, FPT AI, Viettel AI, và nhiều doanh nghiệp khác.
+
+### 4. **Cơ hội nghề nghiệp**
+- Sau khi tốt nghiệp, sinh viên có thể làm việc ở các vị trí như:
+  - Kỹ sư AI / Machine Learning
+  - Kỹ sư Computer Vision / NLP Engineer
+  - Nhà khoa học dữ liệu / Nghiên cứu AI
+  - Kỹ sư MLOps / AI Platform Engineer
+
+- **Lĩnh vực tuyển dụng:**
+  - Công nghệ AI & Phần mềm, Tập đoàn đa quốc gia, Y tế & Tài chính thông minh, Nghiên cứu & Giảng dạy.
+
+### 5. **Mức lương và cơ hội thăng tiến**
+- Mức lương khởi điểm cho sinh viên mới ra trường từ 15-20 triệu VNĐ/tháng.
+- Với 3-5 năm kinh nghiệm, mức lương có thể đạt 50-100 triệu VNĐ/tháng, đặc biệt với chuyên gia trong lĩnh vực AI.
+
+### 6. **Tổ hợp môn xét tuyển**
+- A00 (Toán, Lý, Hóa)
+- A01 (Toán, Lý, Anh)
+- D01 (Toán, Văn, Anh)
+- C01 (Văn, Toán, Lý)
+- C02 (Văn, Toán, Hóa)
+- X26 (Toán, Anh, Tin)
+
+Nếu bạn cần thêm thông tin chi tiết hoặc có câu hỏi cụ thể nào khác, hãy cho tôi biết!",0.9012
+5,admission,Tôi muốn biết về ngành Khoa học Máy tính (KHMT) của SCA?,"### Giới thiệu Ngành Khoa học Máy tính
+- **Mã ngành:** 7480101
+- **Mã chuyên ngành:** 130
+- Ngành Khoa học Máy tính nghiên cứu nền tảng lý thuyết và ứng dụng thực tiễn của máy tính, bao gồm các lĩnh vực như thuật toán, cấu trúc dữ liệu, trí tuệ nhân tạo, hệ thống phân tán và điện toán đám mây.
+- Đây là ngành cốt lõi trong hệ sinh thái công nghệ số, cung cấp nền tảng tri thức để giải quyết các bài toán phức tạp trong nhiều lĩnh vực của xã hội hiện đại.
+
+### Mục tiêu Đào tạo
+- **Kiến thức:**
+  - Nền tảng toán học cho Khoa học Máy tính: đại số tuyến tính, xác suất thống kê, lý thuyết tính toán và toán rời rạc.
+  - Thuật toán, cấu trúc dữ liệu nâng cao và các mô hình tính toán.
+  - Kiến trúc máy tính, hệ điều hành, mạng máy tính và hệ thống phân tán quy mô lớn.
+  - Trí tuệ nhân tạo, Machine Learning, Deep Learning, Khoa học dữ liệu và Robotics.
+
+- **Kỹ năng:**
+  - Lập trình thành thạo C/C++, Python, Java và các ngôn ngữ chuyên dụng cho AI/Data Science như R, Scala.
+  - Phân tích, thiết kế và triển khai hệ thống phần mềm quy mô lớn theo các mô hình phát triển hiện đại (Agile, DevOps).
+  - Nghiên cứu và ứng dụng các mô hình AI, xây dựng hệ thống học máy và xử lý dữ liệu lớn (Big Data).
+  - Kỹ năng làm việc nhóm, nghiên cứu khoa học, giao tiếp kỹ thuật bằng tiếng Anh và quản lý dự án phần mềm.
+
+- **Thái độ:**
+  - Chủ động nghiên cứu, tư duy sáng tạo và sẵn sàng khám phá công nghệ mới.
+  - Tinh thần trách nhiệm cao, đạo đức nghề nghiệp và ý thức bảo vệ quyền riêng tư, an toàn dữ liệu.
+  - Tư duy hệ thống, cầu thị trong học hỏi và cam kết học tập suốt đời.
+
+### Cơ hội Nghề nghiệp
+- Sinh viên tốt nghiệp ngành Khoa học Máy tính có thể làm việc trong nhiều lĩnh vực như phát triển phần mềm, an toàn thông tin, khoa học dữ liệu, trí tuệ nhân tạo, và nhiều lĩnh vực công nghệ khác.
+
+### Cơ sở Vật chất
+- Chương trình đào tạo được thiết kế với phòng thực hành trang bị máy tính cấu hình cao, hệ thống GPU phục vụ nghiên cứu AI và hạ tầng đám mây hiện đại.
+- Chương trình hợp tác với các doanh nghiệp công nghệ hàng đầu, tổ chức thực tập và thực hiện dự án thực tế ngay từ năm thứ 3.
+
+","Chắc chắn rồi! Dưới đây là thông tin chi tiết về ngành Khoa học Máy tính (KHMT) tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân:
+
+### Giới thiệu Ngành Khoa học Máy tính
+- **Mã ngành:** 7480101
+- **Mã chuyên ngành:** 130
+- Ngành Khoa học Máy tính nghiên cứu nền tảng lý thuyết và ứng dụng thực tiễn của máy tính, bao gồm các lĩnh vực như thuật toán, cấu trúc dữ liệu, trí tuệ nhân tạo, hệ thống phân tán và điện toán đám mây.
+- Đây là ngành cốt lõi trong hệ sinh thái công nghệ số, cung cấp nền tảng tri thức để giải quyết các bài toán phức tạp trong nhiều lĩnh vực của xã hội hiện đại.
+
+### Mục tiêu Đào tạo
+- **Kiến thức:**
+  - Nền tảng toán học cho Khoa học Máy tính: đại số tuyến tính, xác suất thống kê, lý thuyết tính toán và toán rời rạc.
+  - Thuật toán, cấu trúc dữ liệu nâng cao và các mô hình tính toán.
+  - Kiến trúc máy tính, hệ điều hành, mạng máy tính và hệ thống phân tán quy mô lớn.
+  - Trí tuệ nhân tạo, Machine Learning, Deep Learning, Khoa học dữ liệu và Robotics.
+
+- **Kỹ năng:**
+  - Lập trình thành thạo C/C++, Python, Java và các ngôn ngữ chuyên dụng cho AI/Data Science như R, Scala.
+  - Phân tích, thiết kế và triển khai hệ thống phần mềm quy mô lớn theo các mô hình phát triển hiện đại (Agile, DevOps).
+  - Nghiên cứu và ứng dụng các mô hình AI, xây dựng hệ thống học máy và xử lý dữ liệu lớn (Big Data).
+  - Kỹ năng làm việc nhóm, nghiên cứu khoa học, giao tiếp kỹ thuật bằng tiếng Anh và quản lý dự án phần mềm.
+
+- **Thái độ:**
+  - Chủ động nghiên cứu, tư duy sáng tạo và sẵn sàng khám phá công nghệ mới.
+  - Tinh thần trách nhiệm cao, đạo đức nghề nghiệp và ý thức bảo vệ quyền riêng tư, an toàn dữ liệu.
+  - Tư duy hệ thống, cầu thị trong học hỏi và cam kết học tập suốt đời.
+
+### Cơ hội Nghề nghiệp
+- Sinh viên tốt nghiệp ngành Khoa học Máy tính có thể làm việc trong nhiều lĩnh vực như phát triển phần mềm, an toàn thông tin, khoa học dữ liệu, trí tuệ nhân tạo, và nhiều lĩnh vực công nghệ khác.
+
+### Cơ sở Vật chất
+- Chương trình đào tạo được thiết kế với phòng thực hành trang bị máy tính cấu hình cao, hệ thống GPU phục vụ nghiên cứu AI và hạ tầng đám mây hiện đại.
+- Chương trình hợp tác với các doanh nghiệp công nghệ hàng đầu, tổ chức thực tập và thực hiện dự án thực tế tại doanh nghiệp ngay từ năm thứ 3.
+
+Nếu bạn cần thêm thông tin chi tiết hoặc có câu hỏi khác, hãy cho tôi biết!",0.8748
+6,admission,Cho tôi biết về ngành Kỹ thuật Phần mềm (KTPM)?,"### Ngành Kỹ thuật Phần mềm (KTPM)
+
+**1. Giới thiệu chung:**
+- Ngành Kỹ thuật Phần mềm tập trung vào việc thiết kế, phát triển, kiểm thử và bảo trì các hệ thống phần mềm phục vụ cho nhiều lĩnh vực như tài chính, y tế, giáo dục, thương mại điện tử và trí tuệ nhân tạo.
+- Ngành này ngày càng trở nên quan trọng trong bối cảnh chuyển đổi số và sự phát triển của công nghệ như điện toán đám mây, blockchain, và AI.
+
+**2. Xu hướng phát triển:**
+- Ngành KTPM hiện nay đang áp dụng các mô hình phát triển phần mềm hiện đại như Agile/Scrum, DevOps, và CI/CD, giúp doanh nghiệp tăng tốc quá trình phát triển và triển khai sản phẩm.
+- Các công nghệ mới như AI-powered Software Engineering, Low-code/No-code Development, và Microservices Architecture đang mở ra nhiều cơ hội sáng tạo.
+
+**3. Chương trình đào tạo:**
+- Chương trình đào tạo của ngành KTPM được xây dựng dựa trên khung chương trình của Đại học Carnegie Mellon (CMU) – một trong những trường hàng đầu thế giới về Khoa học máy tính.
+- Sinh viên sẽ được học các môn tiêu biểu như:
+  - Lập trình nâng cao, Công nghệ phần mềm, Thiết kế Web, Lập trình ứng dụng di động, Khoa học dữ liệu, và AI.
+  - Các kỹ năng thực hành tại phòng thực hành công nghệ phần mềm và thực tập tại các công ty lớn như FPT Software, Samsung, và Microsoft.
+
+**4. Mục tiêu đào tạo:**
+- Đào tạo kỹ sư phần mềm có năng lực chuyên môn cao, tư duy sáng tạo và kỹ năng giải quyết vấn đề.
+- Sinh viên sẽ được trang bị kiến thức về nguyên lý phát triển phần mềm, công nghệ lập trình mới, bảo mật thông tin, và kỹ năng lập trình thành thạo nhiều ngôn ngữ như Python, Java, JavaScript, và C#.
+
+**5. Cơ hội nghề nghiệp:**
+- Ngành KTPM mở ra nhiều cơ hội việc làm trong các lĩnh vực như phát triển phần mềm, quản lý dự án CNTT, kiểm thử phần mềm, và phát triển ứng dụng di động.
+","### Ngành Kỹ thuật Phần mềm (KTPM)
+
+**1. Giới thiệu chung:**
+- Ngành Kỹ thuật Phần mềm tập trung vào việc thiết kế, phát triển, kiểm thử và bảo trì các hệ thống phần mềm phục vụ cho nhiều lĩnh vực như tài chính, y tế, giáo dục, thương mại điện tử và trí tuệ nhân tạo.
+- Ngành này ngày càng trở thành nền tảng quan trọng trong mọi hoạt động kinh tế và xã hội, đặc biệt trong bối cảnh chuyển đổi số và sự phát triển mạnh mẽ của công nghệ.
+
+**2. Xu hướng phát triển:**
+- Ngành KTPM hiện nay đang phát triển theo các mô hình như Agile/Scrum, DevOps, và CI/CD, giúp doanh nghiệp tăng tốc quá trình phát triển và triển khai sản phẩm.
+- Các công nghệ mới như AI-powered Software Engineering, Low-code/No-code Development, Microservices Architecture, và Quantum Computing đang mở ra nhiều cơ hội sáng tạo.
+
+**3. Chương trình đào tạo:**
+- Chương trình đào tạo của ngành KTPM được xây dựng dựa trên khung chương trình của Đại học Carnegie Mellon (CMU) – một trong những trường hàng đầu thế giới về Khoa học máy tính.
+- Sinh viên sẽ được học các môn tiêu biểu như:
+  - Lập trình nâng cao, Công nghệ phần mềm, Thiết kế Web, Lập trình ứng dụng di động, Khoa học dữ liệu và AI, Kiểm thử và đảm bảo chất lượng phần mềm, và nhiều môn học khác.
+
+**4. Mục tiêu đào tạo:**
+- Đào tạo kỹ sư phần mềm có năng lực chuyên môn cao, tư duy sáng tạo và kỹ năng giải quyết vấn đề.
+- Sinh viên sẽ được trang bị kiến thức về nguyên lý phát triển phần mềm, công nghệ lập trình mới, bảo mật thông tin, và kỹ năng lập trình thành thạo nhiều ngôn ngữ như Python, Java, JavaScript, và C#.
+
+**5. Cơ hội nghề nghiệp:**
+- Ngành KTPM mở ra nhiều cơ hội việc làm trong các công ty phần mềm lớn, tổ chức tài chính, và các lĩnh vực công nghệ khác.
+- Sinh viên có thể làm việc trong các vị trí như lập trình viên, kỹ sư phát triển phần mềm, chuyên viên kiểm thử phần mềm, và nhiều vị trí khác trong lĩnh vực công nghệ thông tin.
+
+Nếu bạn cần thêm thông tin chi tiết hoặc có câu hỏi cụ thể nào khác, hãy cho tôi biết!",0.9616
+7,admission,Ngành An toàn Thông tin (ATTT) học những gì?,"Ngành An toàn Thông tin (ATTT) tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân được thiết kế để trang bị cho sinh viên những kiến thức và kỹ năng cần thiết trong lĩnh vực bảo mật thông tin. Dưới đây là những nội dung chính mà sinh viên sẽ được học:
+
+### Kiến thức
+- **Nền tảng mật mã học**: Học về các phương pháp mã hóa và bảo mật thông tin.
+- **Bảo mật mạng và hệ thống**: Nắm vững các chuẩn bảo mật quốc tế như ISO 27001, NIST, PCI-DSS.
+- **Kỹ thuật tấn công mạng**: Bao gồm Ethical Hacking và Penetration Testing, cùng với phương pháp phân tích lỗ hổng bảo mật.
+- **Pháp chứng kỹ thuật số**: Tìm hiểu về Digital Forensics và quy trình ứng phó sự cố an ninh mạng.
+- **Trí tuệ nhân tạo trong bảo mật**: Ứng dụng AI trong phát hiện xâm nhập, phân tích mã độc và tự động hóa an ninh mạng.
+
+### Kỹ năng
+- **Thực hành kiểm thử xâm nhập**: Thành thạo trong việc kiểm tra bảo mật hệ thống và phân tích mã độc.
+- **Xây dựng và vận hành hệ thống giám sát an ninh**: Làm quen với các công cụ như SIEM, tường lửa thế hệ mới (NGFW) và hệ thống phát hiện xâm nhập (IDS/IPS).
+- **Sử dụng công cụ chuyên nghiệp**: Làm việc với các công cụ như Kali Linux, Metasploit, Wireshark, Burp Suite.
+- **Kỹ năng làm việc nhóm và giao tiếp**: Phát triển khả năng giao tiếp kỹ thuật bằng tiếng Anh và quản lý rủi ro an toàn thông tin.
+
+### Thái độ
+- **Chủ động nghiên cứu**: Luôn cập nhật các xu hướng tấn công mới và thích nghi với bối cảnh an ninh mạng.
+- **Tinh thần trách nhiệm**: Tuân thủ đạo đức nghề nghiệp và pháp luật về an toàn thông tin.
+- **Tư duy hệ thống**: Phát triển ý thức học tập suốt đời trong lĩnh vực bảo mật thông tin.
+
+### Chương trình học
+Chương trình đào tạo kết hợp giữa lý thuyết và thực hành, với các môn học tiêu biểu như:
+- Bảo mật nền tảng & Mật mã học
+- Tấn công & Phòng thủ mạng
+- Phân tích & Điều tra kỹ thuật số
+- AI & Bảo mật ứng dụng
+
+Sinh viên cũng sẽ có cơ hội thực hành tại các phòng thực hành bảo mật chuyên biệt và tham gia thực tập tại các tổ chức bảo mật và công ty công nghệ hàng đầu.","Ngành An toàn Thông tin (ATTT) tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân được thiết kế để trang bị cho sinh viên những kiến thức và kỹ năng cần thiết trong lĩnh vực bảo mật thông tin. Dưới đây là những nội dung chính mà sinh viên sẽ được học:
+
+### Kiến thức
+- **Nền tảng mật mã học**: Học về các phương pháp mã hóa và bảo mật thông tin.
+- **Bảo mật mạng và hệ thống**: Nắm vững các chuẩn bảo mật quốc tế như ISO 27001, NIST, PCI-DSS.
+- **Kỹ thuật tấn công mạng**: Bao gồm Ethical Hacking và Penetration Testing, cùng với phương pháp phân tích lỗ hổng bảo mật.
+- **Pháp chứng kỹ thuật số**: Tìm hiểu về Digital Forensics và quy trình ứng phó sự cố an ninh mạng.
+- **Trí tuệ nhân tạo trong bảo mật**: Ứng dụng AI trong phát hiện xâm nhập, phân tích mã độc và tự động hóa an ninh mạng.
+
+### Kỹ năng
+- **Thực hành kiểm thử xâm nhập**: Thành thạo trong việc kiểm tra bảo mật hệ thống và phân tích mã độc.
+- **Xây dựng và vận hành hệ thống giám sát an ninh**: Sử dụng các công cụ như SIEM, tường lửa thế hệ mới (NGFW) và hệ thống phát hiện xâm nhập (IDS/IPS).
+- **Sử dụng công cụ chuyên nghiệp**: Làm quen với các công cụ như Kali Linux, Metasploit, Wireshark, Burp Suite.
+- **Kỹ năng làm việc nhóm và giao tiếp**: Phát triển khả năng giao tiếp kỹ thuật bằng tiếng Anh và quản lý rủi ro an toàn thông tin.
+
+### Thái độ
+- **Chủ động nghiên cứu**: Luôn cập nhật các xu hướng tấn công mới và thích nghi với bối cảnh an ninh mạng.
+- **Tinh thần trách nhiệm**: Tuân thủ đạo đức nghề nghiệp và pháp luật về an toàn thông tin.
+- **Tư duy hệ thống**: Phát triển ý thức học tập suốt đời trong lĩnh vực bảo mật thông tin.
+
+### Các môn học tiêu biểu
+- Bảo mật nền tảng & Mật mã học
+- Tấn công & Phòng thủ mạng
+- Phân tích & Điều tra kỹ thuật số
+- AI & Bảo mật ứng dụng
+
+Chương trình đào tạo được thiết kế để giúp sinh viên có thể bắt kịp nhu cầu thị trường lao động trong ngành an ninh mạng, với các phòng thực hành bảo mật chuyên biệt và cơ hội thực tập tại các tổ chức bảo mật và công ty công nghệ hàng đầu.
+
+Nếu bạn có thêm câu hỏi nào khác, hãy cho tôi biết!",0.9602
+8,admission,Cho tôi thông tin về ngành Mạng Máy tính?,"Ngành Mạng Máy tính & Truyền thông Dữ liệu tại Đại học Duy Tân bao gồm hai chuyên ngành chính: Kỹ thuật Mạng và Mạng máy tính & Truyền thông dữ liệu. Dưới đây là thông tin chi tiết về từng chuyên ngành:
+
+### 1. Chuyên ngành Kỹ thuật Mạng
+- **Mã chuyên ngành:** 101
+- **Giới thiệu:**
+  - Nghiên cứu thiết kế, triển khai, vận hành và tối ưu hóa các hệ thống mạng máy tính.
+  - Tập trung vào hạ tầng mạng từ mạng nội bộ doanh nghiệp đến mạng diện rộng toàn cầu.
+  - Đáp ứng nhu cầu nhân lực kỹ thuật mạng trong bối cảnh chuyển đổi số và công nghệ mới như 5G, SDN, NFV.
+
+- **Chương trình đào tạo:**
+  - Kết hợp lý thuyết và thực hành trên thiết bị mạng chuyên nghiệp.
+  - Các môn tiêu biểu: Mạng máy tính cơ bản, Giao thức TCP/IP, Định tuyến và chuyển mạch, Mạng 5G, Bảo mật hạ tầng mạng, v.v.
+  - Thực hành tại các phòng lab trang bị thiết bị thực tế của Cisco, Juniper.
+
+- **Mục tiêu:**
+  - Đào tạo kỹ sư mạng có năng lực chuyên môn vững chắc, tư duy hệ thống.
+  - Sinh viên được trang bị kiến thức về mạng máy tính, bảo mật, tự động hóa mạng và kỹ năng giao tiếp kỹ thuật bằng tiếng Anh.
+
+### 2. Chuyên ngành Mạng máy tính & Truyền thông dữ liệu
+- **Mã chuyên ngành:** 135
+- **Giới thiệu:**
+  - Nghiên cứu các nguyên lý, công nghệ và hệ thống truyền tải thông tin số.
+  - Tập trung vào giao thức mạng, hạ tầng viễn thông, công nghệ truyền thông không dây và IoT.
+  - Đáp ứng nhu cầu nhân lực trong bối cảnh bùng nổ kết nối toàn cầu và phát triển hạ tầng thông minh.
+
+- **Chương trình đào tạo:**
+  - Cân bằng giữa lý thuyết và thực hành, tích hợp các xu hướng công nghệ mới.
+  - Các môn tiêu biểu: Giao thức mạng, Truyền thông không dây, IoT, Phân tích tín hiệu, v.v.
+  - Thực hành tại các phòng lab IoT và thiết bị truyền thông thực tế.
+
+- **Mục tiêu:**
+  - Đào tạo kỹ sư có khả năng làm chủ chuỗi truyền thông dữ liệu từ tầng vật lý đến tầng ứng dụng.
+  - Sinh viên được trang bị kiến thức về truyền thông dữ liệu, lập trình nhúng và kỹ năng đo lường.
+
+### Tổ hợp môn xét tuyển
+- A00 (Toán, Lý, Hóa)
+- A01 (Toán, Lý, Anh)
+- D01 (Toán, Văn, Anh)
+- C01 (Văn, Toán, Lý)
+- C02 (Văn, Toán, Hóa)
+- X26 (Toán, Anh, Tin)","Ngành Mạng máy tính & Truyền thông dữ liệu tại Đại học Duy Tân bao gồm hai chuyên ngành chính: Kỹ thuật Mạng và Mạng máy tính & Truyền thông dữ liệu. Dưới đây là thông tin chi tiết về từng chuyên ngành:
+
+### 1. Chuyên ngành Kỹ thuật Mạng
+- **Mã chuyên ngành:** 101
+- **Giới thiệu:**
+  - Nghiên cứu thiết kế, triển khai, vận hành và tối ưu hóa các hệ thống mạng máy tính.
+  - Tập trung vào hạ tầng mạng từ mạng nội bộ doanh nghiệp đến mạng diện rộng toàn cầu.
+  - Đáp ứng nhu cầu nhân lực kỹ thuật mạng trong bối cảnh chuyển đổi số và công nghệ mới như 5G, SDN, NFV.
+
+- **Chương trình đào tạo:**
+  - Kết hợp lý thuyết và thực hành trên thiết bị mạng chuyên nghiệp.
+  - Các môn tiêu biểu: Mạng máy tính cơ bản, Giao thức TCP/IP, Định tuyến và chuyển mạch, Mạng 5G, Bảo mật hạ tầng mạng, v.v.
+  - Thực hành tại các phòng lab trang bị thiết bị thực tế của Cisco, Juniper.
+
+- **Mục tiêu:**
+  - Đào tạo kỹ sư mạng có năng lực chuyên môn vững chắc, tư duy hệ thống và khả năng thiết kế - vận hành hạ tầng mạng phức tạp.
+
+### 2. Chuyên ngành Mạng máy tính & Truyền thông dữ liệu
+- **Mã chuyên ngành:** 135
+- **Giới thiệu:**
+  - Nghiên cứu các nguyên lý, công nghệ và hệ thống truyền tải thông tin số.
+  - Tập trung vào giao thức mạng, hạ tầng viễn thông, công nghệ truyền thông không dây và IoT.
+  - Đáp ứng nhu cầu nhân lực trong bối cảnh bùng nổ kết nối toàn cầu và các công nghệ mới.
+
+- **Chương trình đào tạo:**
+  - Cân bằng giữa lý thuyết và thực hành, tích hợp các xu hướng công nghệ mới nhất.
+  - Các môn tiêu biểu: Giao thức mạng, Truyền thông không dây, IoT, Phân tích tín hiệu, v.v.
+  - Thực hành tại các phòng lab IoT và thiết bị truyền thông thực tế.
+
+- **Mục tiêu:**
+  - Đào tạo kỹ sư có khả năng làm chủ toàn bộ chuỗi truyền thông dữ liệu từ tầng vật lý đến tầng ứng dụng.
+
+### Tổ hợp môn xét tuyển
+- A00 (Toán, Lý, Hóa)
+- A01 (Toán, Lý, Anh)
+- D01 (Toán, Văn, Anh)
+- C01 (Văn, Toán, Lý)
+- C02 (Văn, Toán, Hóa)
+- X26 (Toán, Anh, Tin)
+
+Nếu bạn cần thêm thông tin chi tiết hoặc có câu hỏi cụ thể nào khác, hãy cho tôi biết!",0.9846
+9,admission,SCA có chương trình đào tạo sau đại học không?,"Có, Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân có chương trình đào tạo sau đại học. Cụ thể, SCA cung cấp các chương trình đào tạo sau đại học (Thạc sĩ và Tiến sĩ) như sau:
+
+### Bậc Sau Đại học (Thạc sĩ)
+- **Ngành: Khoa học Máy tính**
+- **Ngành: Kỹ thuật Phần mềm**
+- **Ngành: An toàn Thông tin**
+- **Ngành: Hệ thống Thông tin Quản lý**
+
+### Bậc Sau Đại học (Tiến sĩ)
+- **Ngành: Khoa học Máy tính**
+
+Nếu bạn cần thêm thông tin chi tiết về các chương trình này, hãy liên hệ với Văn phòng Tuyển sinh qua các kênh chính thức.","Có, Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân có chương trình đào tạo sau đại học. Cụ thể, SCA cung cấp các chương trình đào tạo sau đại học (Thạc sĩ và Tiến sĩ) như sau:
+
+### Bậc Sau Đại học (Thạc sĩ)
+- **Ngành: Khoa học Máy tính**
+- **Ngành: Kỹ thuật Phần mềm**
+- **Ngành: An toàn Thông tin**
+- **Ngành: Hệ thống Thông tin Quản lý**
+
+### Bậc Sau Đại học (Tiến sĩ)
+- **Ngành: Khoa học Máy tính**
+
+Nếu bạn cần thêm thông tin chi tiết về các chương trình này, hãy liên hệ với Văn phòng Tuyển sinh qua các kênh chính thức.",1.0
+10,admission,Chương trình Thạc sĩ của SCA đào tạo những chuyên ngành nào?,"Chương trình Thạc sĩ của Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân đào tạo các chuyên ngành sau:
+
+- **Ngành: Khoa học Máy tính**
+- **Ngành: Kỹ thuật Phần mềm**
+- **Ngành: An toàn Thông tin**
+- **Ngành: Hệ thống Thông tin Quản lý**
+
+Nếu bạn cần thêm thông tin chi tiết về từng chuyên ngành, hãy cho tôi biết!","Chương trình Thạc sĩ của Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân đào tạo các chuyên ngành sau:
+
+- **Ngành: Khoa học Máy tính**
+- **Ngành: Kỹ thuật Phần mềm**
+- **Ngành: An toàn Thông tin**
+- **Ngành: Hệ thống Thông tin Quản lý**
+
+Nếu bạn cần thêm thông tin chi tiết về từng chuyên ngành, hãy cho tôi biết!",0.9986
+11,admission,Thạc sĩ SCA ra trường làm gì?,"### Cơ hội nghề nghiệp cho Thạc sĩ SCA
+
+Sinh viên tốt nghiệp chương trình Thạc sĩ tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) có thể tìm thấy nhiều cơ hội nghề nghiệp hấp dẫn trong các lĩnh vực khác nhau. Dưới đây là một số vị trí công việc mà các bạn có thể đảm nhận:
+
+- **Kỹ sư Phần mềm:** Thiết kế, phát triển và duy trì các ứng dụng phần mềm cho các tổ chức và doanh nghiệp.
+- **Chuyên gia An toàn Thông tin:** Đảm bảo an ninh cho hệ thống thông tin, phát hiện và ngăn chặn các mối đe dọa an ninh mạng.
+- **Nhà Khoa học Dữ liệu:** Phân tích và xử lý dữ liệu lớn để rút ra thông tin có giá trị cho doanh nghiệp.
+- **Chuyên gia Trí tuệ Nhân tạo:** Phát triển và triển khai các giải pháp AI, Machine Learning và Deep Learning trong các ứng dụng thực tế.
+- **Quản lý Dự án Công nghệ Thông tin:** Lãnh đạo và quản lý các dự án công nghệ, đảm bảo tiến độ và chất lượng công việc.
+- **Giảng viên hoặc Nghiên cứu viên:** Giảng dạy tại các trường đại học hoặc tham gia vào các dự án nghiên cứu trong lĩnh vực khoa học máy tính.
+
+### Kỹ năng cần thiết
+
+Để thành công trong các vị trí này, sinh viên cần trang bị cho mình những kỹ năng sau:
+
+- **Lập trình:** Thành thạo các ngôn ngữ lập trình như C/C++, Python, Java.
+- **Phân tích và thiết kế hệ thống:** Khả năng phân tích yêu cầu và thiết kế hệ thống phần mềm quy mô lớn.
+- **Kỹ năng giao tiếp:** Giao tiếp hiệu quả trong môi trường làm việc và khả năng làm việc nhóm.
+- **Nghiên cứu và phát triển:** Khả năng nghiên cứu và ứng dụng các công nghệ mới trong lĩnh vực khoa học máy tính.
+","### Cơ hội nghề nghiệp cho Thạc sĩ tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA)
+
+Sinh viên tốt nghiệp chương trình Thạc sĩ tại SCA có thể tìm kiếm cơ hội việc làm trong nhiều lĩnh vực khác nhau, bao gồm:
+
+- **Khoa học Máy tính:**
+  - Kỹ sư phần mềm
+  - Nhà phát triển ứng dụng
+  - Chuyên gia phân tích dữ liệu
+
+- **Kỹ thuật Phần mềm:**
+  - Quản lý dự án phần mềm
+  - Kỹ sư kiểm thử phần mềm
+  - Chuyên gia tư vấn công nghệ
+
+- **An toàn Thông tin:**
+  - Chuyên gia an ninh mạng
+  - Chuyên viên phân tích rủi ro
+  - Chuyên gia bảo mật thông tin
+
+- **Hệ thống Thông tin Quản lý:**
+  - Chuyên viên phân tích hệ thống
+  - Quản lý hệ thống thông tin
+  - Chuyên gia tư vấn công nghệ thông tin
+
+### Kỹ năng và kiến thức được trang bị
+
+Sinh viên sẽ được trang bị các kỹ năng và kiến thức cần thiết để đáp ứng yêu cầu của thị trường lao động, bao gồm:
+
+- Kiến thức chuyên sâu về lý thuyết và ứng dụng trong lĩnh vực công nghệ thông tin.
+- Kỹ năng lập trình và phát triển phần mềm.
+- Khả năng phân tích và giải quyết vấn đề phức tạp.
+- Kỹ năng làm việc nhóm và giao tiếp hiệu quả.
+
+### Kết luận
+
+Với nền tảng vững chắc và kỹ năng chuyên môn cao, sinh viên tốt nghiệp Thạc sĩ SCA có thể tự tin bước vào thị trường lao động và đóng góp tích cực cho các tổ chức trong lĩnh vực công nghệ thông tin. Nếu bạn cần thêm thông tin chi tiết, hãy liên hệ với chúng tôi qua các kênh hỗ trợ dưới đây:
+
+- **Website:** [Tuyển sinh SCA](https://duytan.edu.vn/tuyen-sinh/Page/Scholarship.aspx)
+- **Hotline tư vấn:** 0985.001.291 - 0972.111.177 - 0905.885.285 - 0913.499.984",0.8715
+12,admission,Tổ hợp xét tuyển 2026 của SCA gồm những môn nào?,"Tổ hợp xét tuyển năm 2026 của Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) bao gồm các môn sau:
+
+1. **Ngành Khoa học Máy tính (Mã ngành: 7480101)**
+   - A00: Toán, Lý, Hóa
+   - A01: Toán, Lý, Anh
+   - D01: Toán, Văn, Anh
+   - C01: Văn, Toán, Lý
+   - C02: Văn, Toán, Hóa
+   - X26: Toán, Anh, Tin
+
+2. **Ngành An toàn Thông tin (Mã ngành: 7480202)**
+   - A00: Toán, Lý, Hóa
+   - A01: Toán, Lý, Anh
+   - D01: Toán, Văn, Anh
+   - C01: Văn, Toán, Lý
+   - C02: Văn, Toán, Hóa
+   - X26: Toán, Anh, Tin","Tổ hợp xét tuyển năm 2026 của Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) bao gồm các môn sau:
+
+1. **Ngành Khoa học Máy tính (Mã ngành: 7480101)**
+   - A00: Toán, Lý, Hóa
+   - A01: Toán, Lý, Anh
+   - D01: Toán, Văn, Anh
+   - C01: Văn, Toán, Lý
+   - C02: Văn, Toán, Hóa
+   - X26: Toán, Anh, Tin
+
+2. **Ngành An toàn Thông tin (Mã ngành: 7480202)**
+   - A00: Toán, Lý, Hóa
+   - A01: Toán, Lý, Anh
+   - D01: Toán, Văn, Anh
+   - C01: Văn, Toán, Lý
+   - C02: Văn, Toán, Hóa
+   - X26: Toán, Anh, Tin
+
+Nếu bạn cần thêm thông tin chi tiết về các ngành học hoặc phương thức tuyển sinh, hãy cho tôi biết!",0.9727
+13,admission,Liệt kê tất cả các chuyên ngành đào tạo tại SCA?,"Dưới đây là danh sách các chuyên ngành đào tạo tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân:
+
+### Bậc Cử nhân (Đại học)
+1. **Ngành Kỹ thuật phần mềm (Đạt kiểm định ABET)**
+   - Chuyên ngành: Công nghệ Phần mềm
+   - Chuyên ngành: Công nghệ Phần mềm Ô tô thông minh
+   - Chuyên ngành: Thiết kế Games và Multimedia
+
+2. **Ngành An toàn Thông tin (Cybersecurity)**
+   - Chuyên ngành: An toàn Thông tin
+
+3. **Ngành Khoa học Máy tính**
+   - Chuyên ngành: Khoa học Máy tính
+   - Chuyên ngành: Kỹ thuật Máy tính
+
+4. **Ngành Trí tuệ Nhân tạo (AI)**
+   - Chuyên ngành: Trí tuệ Nhân tạo
+
+5. **Ngành Khoa học Dữ liệu**
+   - Chuyên ngành: Big Data and Machine Learning
+
+6. **Ngành Mạng Máy tính & Truyền thông Dữ liệu (Đạt kiểm định ABET)**
+   - Chuyên ngành: Kỹ thuật Mạng
+   - Chuyên ngành: Mạng máy tính và Truyền thông Dữ liệu  
+
+### Bậc Sau Đại học (Thạc sĩ)
+- Ngành Khoa học Máy tính
+- Ngành Kỹ thuật Phần mềm
+- Ngành An toàn Thông tin
+- Ngành Hệ thống Thông tin Quản lý  
+
+### Bậc Sau Đại học (Tiến sĩ)
+- Ngành Khoa học Máy tính
+
+Nếu bạn cần thêm thông tin chi tiết về từng chuyên ngành, hãy cho tôi biết!","Dưới đây là danh sách các chuyên ngành đào tạo tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân:
+
+### Bậc Cử nhân (Đại học)
+1. **Ngành Kỹ thuật phần mềm (Đạt kiểm định ABET)**
+   - Chuyên ngành: Công nghệ Phần mềm
+   - Chuyên ngành: Công nghệ Phần mềm Ô tô thông minh
+   - Chuyên ngành: Thiết kế Games và Multimedia
+
+2. **Ngành An toàn Thông tin (Cybersecurity)**
+   - Chuyên ngành: An toàn Thông tin
+
+3. **Ngành Khoa học Máy tính**
+   - Chuyên ngành: Khoa học Máy tính
+   - Chuyên ngành: Kỹ thuật Máy tính
+
+4. **Ngành Trí tuệ Nhân tạo (AI)**
+   - Chuyên ngành: Trí tuệ Nhân tạo
+
+5. **Ngành Khoa học Dữ liệu**
+   - Chuyên ngành: Big Data and Machine Learning
+
+6. **Ngành Mạng Máy tính & Truyền thông Dữ liệu (Đạt kiểm định ABET)**
+   - Chuyên ngành: Kỹ thuật Mạng
+   - Chuyên ngành: Mạng máy tính và Truyền thông Dữ liệu
+
+### Bậc Sau Đại học (Thạc sĩ)
+- Ngành Khoa học Máy tính
+- Ngành Kỹ thuật Phần mềm
+- Ngành An toàn Thông tin
+- Ngành Hệ thống Thông tin Quản lý
+
+### Bậc Sau Đại học (Tiến sĩ)
+- Ngành Khoa học Máy tính
+
+Nếu bạn cần thêm thông tin chi tiết về từng chuyên ngành, hãy cho tôi biết!",0.999
+14,out_of_scope,Hôm nay trời mưa hay nắng?,"Xin lỗi, nhưng tôi không có thông tin về thời tiết hiện tại. Để biết thông tin chính xác về thời tiết.","Xin lỗi, nhưng tôi không có thông tin chính xác về thời tiết hiện tại. Để biết thông tin thời tiết, bạn có thể kiểm tra trên các trang web dự báo thời tiết hoặc ứng dụng thời tiết trên điện thoại. Nếu bạn có bất kỳ câu hỏi nào khác liên quan đến tuyển sinh hoặc các chuyên ngành tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân, tôi rất sẵn lòng hỗ trợ!",0.7223
+15,out_of_scope,Ý kiến của bạn về chính trị Việt Nam hiện nay?,"Xin lỗi, nhưng tôi không có thông tin chính xác về vấn đề chính trị Việt Nam hiện nay. Để có thông tin chi tiết và chính xác hơn, bạn có thể tham khảo các nguồn tin tức uy tín hoặc liên hệ với các chuyên gia trong lĩnh vực này. ","Xin lỗi, nhưng tôi không có thông tin chính xác về vấn đề chính trị Việt Nam hiện nay. Để có thông tin chi tiết và chính xác hơn, bạn có thể tham khảo các nguồn tin tức uy tín hoặc liên hệ với các chuyên gia trong lĩnh vực này. Nếu bạn có bất kỳ câu hỏi nào liên quan đến tuyển sinh hoặc các chuyên ngành tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân, tôi rất sẵn lòng hỗ trợ!",0.779
+16,edge_case,Bạn có thể nói tiếng Anh không?,"Xin lỗi, nhưng tôi chưa có thông tin chính xác về khả năng sử dụng tiếng Anh. Tuy nhiên, bạn có thể liên hệ với Văn phòng Tuyển sinh để biết thêm thông tin chi tiết. Dưới đây là các kênh liên hệ:
+
+- **Website:** [tuyensinh.duytan.edu.vn](https://tuyensinh.duytan.edu.vn) hoặc [sca.duytan.edu.vn](https://sca.duytan.edu.vn)
+- **Email:** sca@duytan.edu.vn
+- **Hotline tư vấn:** 0985.001.291 - 0972.111.177 - 0905.885.285 - 0913.499.984
+
+Hy vọng bạn sẽ tìm thấy thông tin cần thiết!","Xin lỗi, nhưng tôi chưa có thông tin chính xác về khả năng sử dụng tiếng Anh. Tuy nhiên, bạn có thể liên hệ với Văn phòng Tuyển sinh qua các kênh chính thức dưới đây để được hỗ trợ tốt nhất:
+
+- **Website:** [tuyensinh.duytan.edu.vn](https://tuyensinh.duytan.edu.vn) hoặc [sca.duytan.edu.vn](https://sca.duytan.edu.vn)
+- **Email:** sca@duytan.edu.vn
+- **Hotline tư vấn:** 0985.001.291 - 0972.111.177 - 0905.885.285 - 0913.499.984
+
+Cảm ơn bạn đã quan tâm!",0.9662
+17,admission,Tôi phân vân giữa các ngành CNTT,"Chào bạn,
+
+Rất vui khi bạn quan tâm đến các ngành Công nghệ Thông tin (CNTT) tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân. Dưới đây là một số thông tin về các ngành CNTT mà bạn có thể tham khảo để đưa ra quyết định:
+
+### 1. Mạng máy tính & Truyền thông dữ liệu
+- **Mã ngành:** 7480102
+- **Chuyên ngành:** 
+  - Mạng máy tính & Truyền thông dữ liệu (Mã chuyên ngành: 135)
+  - Kỹ thuật Mạng (Mã chuyên ngành: 101)
+- **Tổ hợp môn xét tuyển:** 
+  - A00 (Toán, Lý, Hóa)
+  - A01 (Toán, Lý, Anh)
+  - D01 (Toán, Văn, Anh)
+  - C01 (Văn, Toán, Lý)
+  - C02 (Văn, Toán, Hóa)
+  - X26 (Toán, Anh, Tin)
+
+### 2. An toàn thông tin
+- **Mã ngành:** 7480202
+- **Chuyên ngành:** An toàn Thông tin (Mã chuyên ngành: 124)
+- **Tổ hợp môn xét tuyển:** 
+  - A00 (Toán, Lý, Hóa)
+  - A01 (Toán, Lý, Anh)
+  - D01 (Toán, Văn, Anh)
+  - C01 (Văn, Toán, Lý)
+  - C02 (Văn, Toán, Hóa)
+  - X26 (Toán, Anh, Tin)
+
+### 3. Trí tuệ nhân tạo
+- **Mã ngành:** 7480107
+- **Chuyên ngành:** Trí tuệ Nhân tạo (Mã chuyên ngành: 132)
+- **Tổ hợp môn xét tuyển:** 
+  - A00 (Toán, Lý, Hóa)
+  - A01 (Toán, Lý, Anh)
+  - D01 (Toán, Văn, Anh)
+  - C01 (Văn, Toán, Lý)
+  - C02 (Văn, Toán, Hóa)
+  - X26 (Toán, Anh, Tin)
+
+### 4. Kỹ thuật phần mềm
+- **Mã ngành:** 7480103
+- **Chuyên ngành:** Công nghệ Phần mềm (Mã chuyên ngành: 102)
+- **Tổ hợp môn xét tuyển:** 
+  - A00 (Toán, Lý, Hóa)
+  - A01 (Toán, Lý, Anh)
+  - D01 (Toán, Văn, Anh)
+  - C01 (Văn, Toán, Lý)
+  - C02 (Văn, Toán, Hóa)
+  - X26 (Toán, Anh, Tin)
+","Chào bạn,
+
+Việc lựa chọn ngành học trong lĩnh vực Công nghệ Thông tin (CNTT) là một quyết định quan trọng và cần cân nhắc kỹ lưỡng. Dưới đây là thông tin về các ngành CNTT tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân mà bạn có thể tham khảo:
+
+### 1. Mạng máy tính & Truyền thông dữ liệu
+- **Mã ngành:** 7480102
+- **Chuyên ngành:** 
+  - Kỹ thuật Mạng (Mã chuyên ngành: 101)
+  - Mạng máy tính & Truyền thông dữ liệu (Mã chuyên ngành: 135)
+- **Tổ hợp môn xét tuyển:** 
+  - A00 (Toán, Lý, Hóa)
+  - A01 (Toán, Lý, Anh)
+  - D01 (Toán, Văn, Anh)
+  - C01 (Văn, Toán, Lý)
+  - C02 (Văn, Toán, Hóa)
+  - X26 (Toán, Anh, Tin)
+
+### 2. An toàn thông tin
+- **Mã ngành:** 7480202
+- **Chuyên ngành:** An toàn Thông tin (Mã chuyên ngành: 124)
+- **Tổ hợp môn xét tuyển:** 
+  - A00 (Toán, Lý, Hóa)
+  - A01 (Toán, Lý, Anh)
+  - D01 (Toán, Văn, Anh)
+  - C01 (Văn, Toán, Lý)
+  - C02 (Văn, Toán, Hóa)
+  - X26 (Toán, Anh, Tin)
+
+### 3. Trí tuệ nhân tạo
+- **Mã ngành:** 7480107
+- **Chuyên ngành:** Trí tuệ Nhân tạo (Mã chuyên ngành: 132)
+- **Tổ hợp môn xét tuyển:** 
+  - A00 (Toán, Lý, Hóa)
+  - A01 (Toán, Lý, Anh)
+  - D01 (Toán, Văn, Anh)
+  - C01 (Văn, Toán, Lý)
+  - C02 (Văn, Toán, Hóa)
+  - X26 (Toán, Anh, Tin)
+
+### 4. Kỹ thuật phần mềm
+- **Mã ngành:** 7480103
+- **Chuyên ngành:** Công nghệ Phần mềm (Mã chuyên ngành: 102)
+- **Tổ hợp môn xét tuyển:** 
+  - A00 (Toán, Lý, Hóa)
+  - A01 (Toán, Lý, Anh)
+  - D01 (Toán, Văn, Anh)
+  - C01 (Văn, Toán, Lý)
+  - C02 (Văn, Toán, Hóa)
+  - X26 (Toán, Anh, Tin)
+
+### Lời khuyên
+- **Xác định sở thích:** Hãy xem xét sở thích và đam mê của bạn trong lĩnh vực CNTT. Bạn thích làm việc với mạng, bảo mật thông tin, phát triển phần mềm hay nghiên cứu trí tuệ nhân tạo?
+- **Tìm hiểu về cơ hội nghề nghiệp:** Mỗi ngành sẽ có những cơ hội nghề nghiệp khác nhau. Hãy tìm hiểu về các vị trí công việc mà bạn có thể đảm nhận sau khi tốt nghiệp.
+
+Nếu bạn cần thêm thông tin chi tiết hoặc có câu hỏi cụ thể hơn, đừng ngần ngại liên hệ với chúng tôi qua các kênh dưới đây:
+
+- **Website:** [tuyensinh.duytan.edu.vn](https://tuyensinh.duytan.edu.vn) hoặc [sca.duytan.edu.vn](https://sca.duytan.edu.vn)
+- **Email:** sca@duytan.edu.vn
+- **Hotline tư vấn:** 0985.001.291 - 0972.111.177 - 0905.885.285 - 0913.499.984
+
+Chúc bạn có quyết định đúng đắn và thành công trong việc chọn ngành học!",0.8647
+18,edge_case,"Tình hình tuyển sinh ngành nào ""hot"" nhất hiện nay?","Hiện nay, có một số ngành đang thu hút sự quan tâm lớn từ học sinh và phụ huynh, đặc biệt trong lĩnh vực công nghệ thông tin. Dưới đây là một số ngành ""hot"" tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân:
+
+### 1. **Kỹ thuật Mạng (Mạng máy tính & Truyền thông dữ liệu)**
+- **Mô tả:** Ngành này nghiên cứu thiết kế, triển khai và tối ưu hóa các hệ thống mạng máy tính, từ mạng nội bộ đến mạng diện rộng.
+- **Cơ hội nghề nghiệp:** Kỹ sư mạng, chuyên viên an ninh mạng, quản trị hệ thống mạng.
+- **Nhu cầu:** Với sự phát triển của 5G, IoT và các công nghệ mới, nhu cầu về kỹ sư mạng đang tăng cao.
+
+### 2. **Khoa học Dữ liệu (Big Data & Machine Learning)**
+- **Mô tả:** Ngành này tập trung vào việc phân tích và xử lý dữ liệu lớn, phát triển các mô hình học máy.
+- **Cơ hội nghề nghiệp:** Kỹ sư dữ liệu, nhà khoa học dữ liệu, kỹ sư Machine Learning.
+- **Nhu cầu:** Các công ty công nghệ, tài chính và thương mại điện tử đang cần nhân lực có chuyên môn cao trong lĩnh vực này.
+
+### 3. **Kỹ thuật Phần mềm (Thiết kế Games và Multimedia)**
+- **Mô tả:** Ngành này liên quan đến phát triển game và nội dung số, bao gồm lập trình game và thiết kế đồ họa.
+- **Cơ hội nghề nghiệp:** Lập trình viên game, nhà thiết kế game, chuyên viên đồ họa 3D.
+- **Nhu cầu:** Ngành công nghiệp game đang phát triển mạnh mẽ, tạo ra nhiều cơ hội việc làm hấp dẫn.
+
+","Hiện nay, có một số ngành đang rất ""hot"" và thu hút sự quan tâm của sinh viên, đặc biệt trong lĩnh vực công nghệ thông tin. Dưới đây là một số ngành nổi bật tại Trường Khoa học Máy tính & Trí tuệ Nhân tạo (SCA) thuộc Đại học Duy Tân:
+
+### 1. **Kỹ thuật Mạng (Mạng máy tính & Truyền thông dữ liệu)**
+- **Nhu cầu nhân lực:** Ngành này đang trải qua sự chuyển đổi công nghệ mạnh mẽ với sự xuất hiện của 5G, 6G, và các công nghệ mạng mới. Nhu cầu về kỹ sư mạng có trình độ cao đang gia tăng do sự phát triển của hạ tầng mạng và đô thị thông minh.
+- **Cơ hội việc làm:** Kỹ sư mạng có thể làm việc trong các công ty viễn thông, công nghệ thông tin, và các dự án phát triển hạ tầng thông minh.
+
+### 2. **Khoa học Dữ liệu (Big Data & Machine Learning)**
+- **Nhu cầu nhân lực:** Với sự bùng nổ của dữ liệu lớn, ngành này đang cần nhiều kỹ sư dữ liệu, nhà khoa học dữ liệu và kỹ sư Machine Learning để phân tích và xử lý dữ liệu.
+- **Cơ hội việc làm:** Sinh viên có thể làm việc tại các công ty công nghệ, tài chính, thương mại điện tử và các tập đoàn đa quốc gia.
+
+### 3. **Kỹ thuật Phần mềm (Thiết kế Games và Multimedia)**
+- **Nhu cầu nhân lực:** Ngành thiết kế game và nội dung số đang phát triển mạnh mẽ, với nhiều cơ hội nghề nghiệp trong lập trình game, thiết kế game, và phát triển ứng dụng VR/AR.
+- **Cơ hội việc làm:** Sinh viên có thể làm việc tại các công ty game lớn hoặc tham gia vào các dự án sáng tạo nội dung số.
+
+### Kết luận
+Các ngành Kỹ thuật Mạng, Khoa học Dữ liệu và Kỹ thuật Phần mềm đều đang có nhu cầu tuyển dụng cao và mang lại nhiều cơ hội nghề nghiệp hấp dẫn cho sinh viên. Nếu bạn có thêm câu hỏi hoặc cần thông tin chi tiết hơn, hãy liên hệ với chúng tôi qua các kênh chính thức. Chúc bạn thành công trong việc lựa chọn ngành học phù hợp!",0.8942
