@@ -1,105 +1,148 @@
 # Duy Tân Chatbot
 
-Duy Tân Chatbot là một dự án ứng dụng RAG (Retrieval-Augmented Generation) với backend được xây dựng bằng FastAPI, LangChain, ChromaDB và frontend được xây dựng bằng React (Vite).
+Duy Tân Chatbot là ứng dụng RAG chatbot cho tư vấn tuyển sinh, gồm:
+
+- Backend FastAPI dùng LangChain, ChromaDB và OpenAI.
+- Frontend React Vite được build và serve bằng Nginx khi chạy Docker.
 
 ## Cấu trúc dự án
 
-- `src/`: Chứa mã nguồn backend (FastAPI).
-  - `agent/`: Chứa logic chatbot của LangChain, retriever và các prompt.
-  - `ingest/`: Chứa code để xử lý (load, chunk) và lưu trữ tài liệu (vector store).
-  - `config/`: Quản lý các cài đặt cấu hình.
-  - `services/`, `schemas/`, `api/`: Hỗ trợ tầng HTTP của ứng dụng.
-- `frontend/`: Chứa mã nguồn frontend (React Vite).
-- `data/sources/`: Chứa các tài liệu markdown (nguồn dữ liệu) để đưa vào vector store.
-- `data/chromadb/`: Nơi lưu trữ cơ sở dữ liệu vector ChromaDB.
-- `tests/`: Chứa mã nguồn test và dữ liệu test (`testcase.csv`).
+- `main.py`: entrypoint backend FastAPI.
+- `run_ingest.py`: script nạp dữ liệu vào ChromaDB.
+- `src/`: mã nguồn backend.
+  - `agent/`: chatbot, retriever và prompt.
+  - `ingest/`: load, chunk và lưu tài liệu vào vector store.
+  - `config/`: cấu hình ứng dụng.
+  - `api/`, `services/`, `schemas/`: tầng HTTP và service.
+- `frontend/`: mã nguồn frontend React Vite.
+- `data/sources/`: tài liệu nguồn dạng markdown.
+- `data/chromadb/`: dữ liệu vector ChromaDB sau khi ingest.
+- `tests/`: script test và dữ liệu đánh giá.
 
-## Yêu cầu hệ thống
+## Yêu cầu
 
-- Python 3.13+
-- Node.js & npm (cho frontend)
-- Docker & Docker Compose (tùy chọn)
-- OpenAI API Key
+- Docker Desktop hoặc Docker Engine có Docker Compose.
+- File `.env` ở thư mục gốc dự án.
+- `OPENAI_API_KEY` hợp lệ nếu muốn chatbot gọi OpenAI.
+- Dữ liệu đã ingest trong `data/chromadb/` nếu muốn RAG trả lời theo tài liệu.
 
-## Hướng dẫn cài đặt và chạy (Local)
+## Cấu hình môi trường
 
-### 1. Thiết lập Backend
+Tạo file `.env` ở thư mục gốc:
 
-Tạo và kích hoạt môi trường ảo (Virtual Environment):
 ```bash
-python -m venv .venv
-# Trên macOS/Linux:
-source .venv/bin/activate
-# Trên Windows:
-# .venv\Scripts\activate
+OPENAI_API_KEY=your_openai_api_key
+VITE_API_URL=http://localhost:8000
 ```
 
-Cài đặt các thư viện phụ thuộc:
+Nếu dự án có dùng thêm LangSmith, có thể bổ sung các biến tương ứng vào `.env`.
+
+Không commit file `.env`.
+
+## Chạy bằng Docker
+
+Chạy 2 service chính là backend `api` và frontend `frontend`:
+
 ```bash
-pip install -e .
-# Hoặc nếu bạn dùng uv:
-# uv pip install -e .
+docker compose up --build -d api frontend
 ```
 
-Cấu hình môi trường:
-- Tạo một file `.env` ở thư mục gốc của dự án.
-- Thiết lập biến môi trường `OPENAI_API_KEY` của bạn trong file `.env`. (Tuyệt đối không commit file `.env` lên Git).
-- Tùy chọn: thiết lập các biến LangSmith nếu cần thiết.
+Sau khi chạy xong:
 
-### 2. Nạp dữ liệu (Ingestion)
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:8000
+- API docs: http://localhost:8000/docs
 
-Trước khi trò chuyện với chatbot, bạn cần nạp kiến thức cho hệ thống (lấy từ các tài liệu trong `data/sources/`):
+Kiểm tra trạng thái container:
+
+```bash
+docker compose ps api frontend
+```
+
+Xem log:
+
+```bash
+docker compose logs -f api frontend
+```
+
+Tắt container:
+
+```bash
+docker compose stop api frontend
+```
+
+Tắt và xoá container/network:
+
+```bash
+docker compose down
+```
+
+## Nạp dữ liệu cho RAG
+
+Chatbot cần dữ liệu trong `data/chromadb/`. Nếu chưa có vector store hoặc đã thay đổi tài liệu trong `data/sources/`, chạy ingest trước.
+
+Nếu chạy bằng môi trường Python local:
+
 ```bash
 python run_ingest.py
 ```
 
-### 3. Khởi động Backend (FastAPI API)
+Nếu muốn chạy ingest bằng Docker:
 
-Khởi động server API. Server sẽ chạy trên cổng `8000`:
 ```bash
+docker compose run --rm api python run_ingest.py
+```
+
+Sau khi ingest xong, khởi động lại backend nếu cần:
+
+```bash
+docker compose restart api
+```
+
+## Ghi chú về proxy
+
+Trong `docker-compose.yml` có service `proxy-manager` dùng cho reverse proxy/domain/SSL. Khi chạy local để phát triển hoặc demo trên máy cá nhân, chỉ cần chạy:
+
+```bash
+docker compose up --build -d api frontend
+```
+
+Không cần bật `proxy-manager` trừ khi bạn muốn cấu hình domain hoặc HTTPS.
+
+## Chạy local không dùng Docker
+
+Backend:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+python run_ingest.py
 python main.py
 ```
 
-### 4. Thiết lập và chạy Frontend
+Frontend:
 
-Mở một terminal mới (hoặc tab khác), chuyển đến thư mục `frontend`:
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-*(Lưu ý: Thiết lập biến môi trường `VITE_API_URL` trong frontend cho phù hợp nếu cần).*
+## Kiểm thử
 
----
+Các script test cần `.env` hợp lệ, OpenAI API key và dữ liệu đã ingest.
 
-## Hướng dẫn chạy bằng Docker
-
-Để chạy nhanh toàn bộ dự án (Bao gồm API, Frontend, Proxy) bằng Docker, hãy chạy:
+Smoke test RAG:
 
 ```bash
-docker compose up --build
+python tests/test_rag_pipeline.py
 ```
 
----
+Đánh giá từ `tests/testcase.csv`:
 
-## Kiểm thử (Testing)
+```bash
+python tests/evaluate_agent.py
+```
 
-**Yêu cầu:** Cần cấu hình file `.env` hợp lệ, quyền truy cập API OpenAI và đã chạy lệnh nạp dữ liệu (ingest vector store).
-
-- Để chạy kiểm thử RAG cơ bản (smoke test):
-  ```bash
-  python tests/test_rag_pipeline.py
-  ```
-
-- Để đánh giá (evaluate) ứng dụng dựa trên các câu hỏi từ `tests/testcase.csv`:
-  ```bash
-  python tests/evaluate_agent.py
-  ```
-  *(Kết quả sẽ được xuất ra file `tests/testcase_answer.csv`)*.
-
----
-
-## Một số quy tắc phát triển (Coding Guidelines)
-- Backend viết bằng Python 3.13+. Sử dụng `snake_case` cho file, biến, hàm và `PascalCase` cho class. Sử dụng import tuyệt đối (`from src.agent...`).
-- Frontend sử dụng JSX modules, 2-space indentation và tuân thủ ESLint rules từ `frontend/eslint.config.js`.
+Kết quả được ghi vào `tests/testcase_answer.csv`.

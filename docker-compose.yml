@@ -18,9 +18,8 @@ services:
     build: .
     container_name: duy-tan-api
     restart: always
-    # Cổng 8000 bây giờ sẽ được Proxy quản lý, không cần public trực tiếp nữa (bảo mật hơn)
-    expose:
-      - "8000"
+    ports:
+      - "8000:8000"
     env_file:
       - .env
     volumes:
@@ -36,8 +35,8 @@ services:
         - VITE_API_URL=${VITE_API_URL:-http://localhost:8000}
     container_name: duy-tan-frontend
     restart: always
-    expose:
-      - "80"
+    ports:
+      - "5173:80"
     depends_on:
       - api
     networks:
